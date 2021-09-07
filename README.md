@@ -30,3 +30,9 @@ This is the normal process that you will have to follow in order to interact wit
 
 **Assignment 1**. Please fill in a line with a dataset description at folder [Assignment 1](./Assignment1/DatasetDescriptions.csv), as discussed in the course moodle site, and make a pull request
 
+**Assignment 2a - Exercise on RDF and RDFS**. Upload an image with the graph described in the [StickyNote_PureRDF.rdf](./Assignment2/StickyNote_PureRDF.rdf) file, and comment on those from your colleagues (if you wish), creating issues in the GitHub repository. Additionally, upload a *.ttl* file with RDF instantiating the ![diagram](./Assignment2/graph.png) shown in the slides. Both files must be uploaded in the [Assignment2](./Assignment2/) folder, **using your GitHub username - your NameSurname** + (.png/.svg) and (.rdf/.ttl), or any other similar file extension.
+
+For example, I (my Github username is 'AndreaCimminoArriaga') would upload two files :
+* ocorcho-OscarCorcho.png (the image, Exercise 1.a) 
+* ocorcho-OscarCorcho.ttl (Exercise 1.b in Turtle).
+

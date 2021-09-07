@@ -15,13 +15,13 @@ This is the normal process that you will have to follow in order to interact wit
  
         git fetch upstream
  
- * Checkout the local master branch of your fork: 
+ * Checkout the local main branch of your fork: 
  
-        git checkout master
+        git checkout main
  
- * Merge changes from the remote into your master branch: 
+ * Merge changes from the remote into your main branch: 
  
-        git merge upstream/master
+        git merge upstream/main
 
 * Make any changes to your repository, according to the specific assignment
 * Commit your changes into your local repository

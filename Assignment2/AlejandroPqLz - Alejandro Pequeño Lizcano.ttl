@@ -12,4 +12,3 @@ ns0:Measurement8401
     ns0:atTime "2010-06-12T12:00:12"^^xsd:dayTimeDuration  .
 ns0:User10A
     ns0:hasName "Pedro"^^xsd:Name  .
-

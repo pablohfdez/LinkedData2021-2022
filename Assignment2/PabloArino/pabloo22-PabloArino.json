@@ -1,0 +1,49 @@
+{
+  "@graph": [
+    {
+      "@context":{
+        "ns0": "http://www.ontogrid.net/StickyNote#" ,
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      }
+    }
+    {
+      "@id": "ns0:Class01",
+      "ns0:includes": [
+        {
+          "@id": "ns0:Sensor029"
+        },
+        {
+          "@id": "ns0:Computer101"
+        }
+      ]
+    },
+    {
+      "@id": "ns0:Sensor029",
+      "ns0:hasMeasurement": {
+        "@id": "ns0:Measurement8401"
+      }
+    },
+    {
+      "@id": "ns0:Measurement8401",
+      "ns0:atTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2010-06-12T12:00:12"
+      },
+
+      "ns0:Measurement8401": {
+        "@type": "xsd:short",
+        "@value": "29"
+      }
+    },
+    {
+      "@id": "ns0:Computer101",
+      "ns0:hasOwner": {
+        "@id": "ns0:User10A"
+      }
+    },
+    {
+      "@id": "ns0:User10A",
+      "ns0:hasName": "Pedro"
+    }
+  ]
+}

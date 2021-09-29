@@ -34,7 +34,7 @@
 
     {
       "@id": "http://www.ontogrid.net/StickyNote#Measurement8401",
-      "ns0:atTime": {
+      "atTime": {
         "@type": "xsd:dateTime",
         "@value": "2010-06-12T12:00:12"
       },

@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "base": "http://www.global-comunications.org/define#"
+  },
+  {
+    "@id": "base:Class01",
+    "base:includes": [
+      {
+        "@id": "base:Sensor029"
+      },
+      {
+        "@id": "base:Computer101"
+      }
+    ]
+  },
+  {
+    "@id": "base:Sensor029",
+    "base:hasMeasurement": {
+      "@id": "base:Measurement8401"
+    }
+  },
+  {
+    "@id": "base:Measurement8401",
+    "base:hasTemperature": 29,
+    "base:atTime": "2010-06-12T12:00:12"
+  },
+  {
+    "@id": "base:Computer101",
+    "base:hasOwner": {
+      "@id": "base:User10A"
+    }
+  },
+  {
+    "@id": "base:User10A",
+    "base:hasName": "Pedro"
+  }
+}

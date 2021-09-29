@@ -1,0 +1,41 @@
+{
+  "@context": {
+	"asignaturas": "https://moodle.upm.es/titulaciones/oficiales#", 
+	"nombre": "rdfs:label",
+	"CiudadNatal": "rdfs:label",
+	"edad": "rdfs:label",
+	"Universidad": "rdfs:label",
+	"nombrePadres": "https://moodle.upm.es/usuarios/Padres",
+	"descripcion": "rdfs:comment",
+	"hasTeachers": "https://moodle.upm.es/profesores/",
+	"hasName": "https://moodle.upm.es/basedenombres#"
+	
+  },
+  "@id": "https://moodle.upm.es/usuarios/JorgeDLP#",
+  "@type": "https://moodle.upm.es/usuarios/Usuario#",
+  "nombre": "Jorge de la Rosa Padrón",
+  "CiudadNatal": "Santa Cruz de Tenerife",
+  "edad": 18,
+  "Universidad": "Politecnica de Madrid",
+  "NombrePadres": [
+	{
+	  "@id": "https://moodle.upm.es/usuarios/JorgeDLP/Rafael"
+	},
+	{
+	  "@id": "https://moodle.upm.es/usuarios/JorgeDLP/Iznaya"
+	}
+  ],
+  "asignaturas": [
+	{
+	"@id": "asignaturas:WebSemantica",
+	"@type": "asignaturas:Asignatura",
+	"hasName": "Web semantica",
+	"description": "Inserte una breve descripción acorde a los gustos del profesor" ,
+	"HasTeachers": {
+	     "@id": "https://moodle.upm.es/profesores/AndreaCimmino",
+	     "hasName": "Andrea Cimmino"
+	  }
+
+	}
+  ]
+}

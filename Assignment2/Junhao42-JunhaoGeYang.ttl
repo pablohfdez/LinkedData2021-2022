@@ -1,0 +1,13 @@
+@prefix graph: <http://www.ontologies.net/Graph#>
+
+:Class01         graph:includes :Sensor029 ;
+                 graph:includes :Computer101 ;
+         
+:Sensor029       graph:hasMeasurement :Measurement8401 ;
+
+:Measurement8401 graph:hasTemperature "29".
+                 graph:atTime "2010-06-12T12:00:12".
+                 
+:Computer101     graph:hasOwner :User10A ;
+
+:User10A         graph:hasName "Pedro"

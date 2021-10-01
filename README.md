@@ -36,3 +36,12 @@ For example, I (assuming my Github username is 'acimmino') would upload two file
 * acimmino-AndreaCimminoArriaga.png (the image, Exercise 2.1.a) 
 * acimmino-AndreaCimminoArriaga.ttl (Exercise 2.1.b in Turtle).
 
+
+**Assignment 2b - Exercise on RDF and RDFS (second part).** Upload to the GitHub repository the JSON-LD files corresponding to the exercises described in the slides. This can be done in the Assignment2 folder, using the following names:
+
+* your GitHub username + fromRDFtoJSON-LD.jsonld
+* your GitHub username + fromJSONtoJSON-LD.jsonld
+
+For example, I (assuming my Github username is 'acimmino') would upload two files :
+* acimmino-AndreaCimminoArriaga.png (the image, Exercise 2.1.a) 
+* acimmino-AndreaCimminoArriaga.ttl (Exercise 2.1.b in Turtle).

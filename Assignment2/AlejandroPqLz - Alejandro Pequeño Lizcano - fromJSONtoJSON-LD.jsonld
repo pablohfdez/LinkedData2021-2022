@@ -1,0 +1,31 @@
+[
+	"@context": {
+		"sch": "https://schema.org/",
+		"rdfs": "https://www.w3.org/2000/01/rdf-schema#",
+		"nombre": "sch:name",
+		"ciudad": "sch:homeLocation",
+		"edad": "sch:age",
+		"universidad": "sch:affiliation",
+		"descripción": "rdfs:descripcion",
+		"padres": "sch:childOf",
+		"profesor": "sch:proffesorOf"
+	},
+
+	"@type": "sch:Person",
+	"nombre": "Alejandro Pequeño Lizcano",
+	"ciudad": "Móstoles",
+	"edad": 18,
+	"universidad": "UPM",
+	"padres": [
+		{"@id": "http://linkeddata.es/person/02",
+	 	"@type": "sch:Person", "nombre: "Ignacio"}
+		{"@type": "sch:Person", "nombre: "María Ángeles"}
+	],
+	"asignatura": [{
+		"nombre": "Web Semántica"
+		"profesor": {"nombre:"Andrea"}
+		"descripción": "web semántica linked data y grafos de conocimiento"
+ 	 },
+	]
+]
+	

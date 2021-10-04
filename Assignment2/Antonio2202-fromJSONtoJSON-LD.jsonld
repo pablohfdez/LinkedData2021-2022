@@ -1,0 +1,4 @@
+[{"@type":["root"],"name":[{"@value":"Antonio Reviejo González"}],"hometown":[{"@value":"Madrid"}],"age":[{"@value":"19"}],"almaMater":
+[{"@value":"My parents"}],"parents":[{"@value":"Margarita and José Luis"}],"subjects":[{"@id":"_:b1"},{"@id":"_:b2"},{"@id":"_:b3"}]},
+{"@id":"_:b1","@type":["name"]},{"@id":"_:b2","@type":["teachers"]},{"@id":"_:b3","@type":["description"]},{"@id":"description"},{"@id":"name"},
+{"@id":"root"},{"@id":"teachers"}]

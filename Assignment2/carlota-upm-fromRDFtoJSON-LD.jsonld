@@ -1,0 +1,60 @@
+{
+    "@RDFtoJSONLD":
+    [  
+        { 
+            "@context":
+               {
+                "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+                "includes": "rdfs:label",
+                "hasOwner": "rdfs:label ",
+                "atTime": "rdfs:label ",
+                "hasTemperature": "rdfs:label ",
+                "hasMeasurement": "rdfs:label ",
+                "hasName": "rdfs:label "
+            }
+        },  
+        {
+            "@id":"http://njh.me/#Class01",
+            "includes":
+                [   
+                    {"@id":"http://njh.me/#Sensor029"},
+                    {"@id":"http://njh.me/#Computer101"}
+                ]
+        },
+        {
+            "@id":"http://njh.me/#Computer101",
+            "hasOwner":
+                [
+                    {"@id":"http://njh.me/#User10A"}
+                ]
+        },
+        {
+            "@id":"http://njh.me/#Measurement8401",
+            "atTime":
+                [
+                    {
+                        "@value":"2010-06-12T12:00:12",
+                        "@type":"http://www.w3.org/2001/XMLSchema#dateTime"
+                    }
+                ],
+            "hasTemperature":
+                [
+                    {"@value":29}
+                ]
+        },
+        {   
+            "@id":"http://njh.me/#Sensor029",
+            "hasMeasurement":
+                [
+                    {"@id":"http://njh.me/#Measurement8401"}
+                ]
+        },
+        {
+            "@id":"http://njh.me/#User10A",
+            "hasName":
+                [
+                    {"@value":"Pedro"}
+                ]
+        }
+    ]
+}

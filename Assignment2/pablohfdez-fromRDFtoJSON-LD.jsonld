@@ -1,0 +1,29 @@
+{
+	"@context" : {
+		"sch" : "https://schema.org/",
+		"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+		"nombre" : "sch:name",
+		"ciudad" : "sch:homeLocation",
+		"edad" : "sch:age",
+		"universidad" : "sch:afiliation"
+		"descripcion" : "rdfs:description"
+	},
+
+	"@type" : "sch:Person",
+	"nombre" : "Pablo",
+	"ciudad" : "Madrid",
+	"edad" : 19,
+	"universidad" : "upm",
+	"padres" : [
+		{"@id" : "http://linkeddata.es/persons/02", "@type" : "sch:Person", "nombre" : "gema"}, {"@type" : "sch:Person", "nombre" : "pablo"}		
+		{"nombre" : "Gema"},
+		{"nombre" : "Pablo"}
+	],
+
+	"asignaturas" : [{
+		"nombre" : "SWHFK",
+		"profesores" : [ {"nombre" : "Andrea"}],
+		"descripcion" : "web semantica"
+	    }
+	]
+}

@@ -1,0 +1,45 @@
+{
+  "@graph":[
+    {
+      "@context": {
+        "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
+        "sch": "https://schema.org/",
+        "foaf": "http://xmlns.com/foaf/spec/#",
+        "person":"foaf:person",
+        "name":"foaf:name",
+        "age":"foaf:age",
+        "homeLocation":"sch:homeLocation",
+        "parents":"sch:parents",
+        "alma_mater":"foaf:alma_mater",
+        "subjects":"foaf:subjects",
+        "subject":"foaf:subject",
+        "subject_name":"foaf:subject_name",
+      }
+    },
+    {
+      "@id":"",
+      "@type":"person",
+      "name":"Pablo Alonso",
+      "age":"19",
+      "homeLocation":"Madrid",
+      "parents":{
+        {
+          "@id":"",
+          "@type":"person",
+          "name":"Jose Luis",
+        },
+        {
+          "@id":"",
+          "@type":"person",
+          "name":"Mercedes",
+        },
+      "alma_mater":"UPM",
+      "subjects":{
+        "@id":"",
+        "@type":"subject",
+        "ubject_name":"Web semántica",
+       },
+    },
+   ]
+}
+      

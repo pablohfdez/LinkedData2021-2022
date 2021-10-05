@@ -45,3 +45,7 @@ For example, I (assuming my Github username is 'acimmino') would upload two file
 For example, I (assuming my Github username is 'acimmino') would upload two files :
 * acimmino-AndreaCimminoArriaga.png (the image, Exercise 2.1.a) 
 * acimmino-AndreaCimminoArriaga.ttl (Exercise 2.1.b in Turtle).
+
+**Assignment 3 - SPARQL.** Upload the SPARQL queries (one per file) and their results (one per file or in the same file of their queires). Before uploading the files create a folder with your YourGitHubID-StudentID (e.g., Assignment3/dchaves-u120106/) in [Assignment3 folder]().
+
+The following set of instructions will be updated as we progress during the course

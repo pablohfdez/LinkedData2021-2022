@@ -46,6 +46,6 @@ For example, I (assuming my Github username is 'acimmino') would upload two file
 * acimmino-AndreaCimminoArriaga.png (the image, Exercise 2.1.a) 
 * acimmino-AndreaCimminoArriaga.ttl (Exercise 2.1.b in Turtle).
 
-**Assignment 3 - SPARQL.** Upload the SPARQL queries (one per file) and their results (one per file or in the same file of their queires). Before uploading the files create a folder with your YourGitHubID-StudentID (e.g., Assignment3/dchaves-u120106/) in [Assignment3 folder]().
+**Assignment 3 - SPARQL.** Upload the SPARQL queries (one per file) and their results (one per file or in the same file of their queires). Before uploading the files create a folder with your YourGitHubID-StudentID (e.g., Assignment3/dchaves-u120106/) in [Assignment3 folder](https://github.com/AndreaCimminoArriaga/LinkedData2021-2022/tree/main/Assignment3).
 
 The following set of instructions will be updated as we progress during the course

@@ -1,0 +1,76 @@
+ejercicio1
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?p
+WHERE {
+dbo:Politician ?p ?y
+}
+
+
+ejercicio2
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?p
+WHERE {
+dbo:Politician ?p ?y.
+MINUS {?x rdf:type ?y}
+}
+
+
+
+ejercicio3
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT COUNT(DISTINCT ?p)
+WHERE {
+dbo:Politician ?p ?y.
+MINUS {?x rdf:type ?y}
+}
+
+
+
+ejercicio4
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT distinct ?p count(?x)
+WHERE {
+dbo:Politician ?p ?x.
+FILTER(?p!=rdf:type)
+}
+
+
+ejercicio5
+
+
+ejercicio 6
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?x
+WHERE {
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x
+}
+
+
+ejercicio 7
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?p
+WHERE {
+dbo:Politician  ?p ?x
+FILTER REGEX (?p, "name")
+}

@@ -1,0 +1,60 @@
+
+{
+    "@context":{
+      "ns0": "http://www.ontogrid.net/StickyNote#" ,
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "hasMeasurement": "ns0:hasMeasurement",
+      "includes": "ns0:includes",
+      "atTime": "ns0:atTime",
+      "Measurement8401": "ns0:Measurement8401",
+      "hasOwner": "ns0:hasOwner",
+      "hasName": "ns0:hasName",
+      "hasTemperature": "ns0:hasTemperature"
+
+    }
+
+{"@id":"http://www.ontogrid.net/StickyNote#Class01",
+"includes":
+    [
+        {"@id":"http://www.ontogrid.net/StickyNote#Sensor029"
+        },
+        {"@id":"http://www.ontogrid.net/StickyNote#Computer101"
+        }
+    ]
+},
+
+"@id":"http://www.ontogrid.net/StickyNote#Computer101",
+"hasOwner":
+    [
+        {"@id":"http://www.ontogrid.net/StickyNote#User10A"}
+    ]
+},
+    {"@id":"http://www.ontogrid.net/StickyNote#Measurement8401",
+    "hasTemperature":
+    [
+        {"@value":"29",
+        "@type":"http://www.w3.org/2001/XMLSchema#Temperature"
+        }
+    ],
+    "atTime":
+        [
+            {"@value":"2010-06-12T12:00:12",
+            "@type":"http://www.w3.org/2001/XMLSchema#dayTimeDuration"
+            }
+        ]
+    },
+    
+    {"@id":"http://www.ontogrid.net/StickyNote#Sensor029",
+    "hasMeasurement":
+        [
+            {"@id":"http://www.ontogrid.net/StickyNote#Measurement8401"}
+        ]
+    },
+    {"@id":"http://www.ontogrid.net/StickyNote#User10A",
+    "hasName":
+        [
+            {"@value":"Pedro","@type":"http://www.w3.org/2001/XMLSchema#Name"
+            }
+        ]
+    }
+}

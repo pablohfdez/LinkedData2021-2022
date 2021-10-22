@@ -1,0 +1,5 @@
+PREFIX db: <http://dbpedia.org/ontology/>
+SELECT DISTINCT COUNT(?y)
+WHERE { ?x ?y db:Politician 
+FILTER(?y != rdf:type).
+}

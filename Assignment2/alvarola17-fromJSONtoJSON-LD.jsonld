@@ -1,0 +1,43 @@
+{
+	"@context": {
+		"sch" : "https://schema.org/",
+		"rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+		"nombre" : "sch:name",
+		"ciudad" : "sch:homeLocation",
+		"edad" : "sch:age",
+		"universidad" : "sch:affiliation",
+		"descripcion" : "rdfs:description",
+		"padres" : "sch:childOf"
+	},
+	"@type" : "sch:Person",
+	"nombre" : "Alvaro",
+	"ciudad" : "Madrid",
+	"edad" : "18",
+	"universidad" : "UPM",
+	"padres" : [
+		{"@id" : "https://xyz.com/persons/01","@type" : "sch:Person","nombre" : "Antonia"},
+		{"@id" : "https://xyz.com/persons/02","@type" : "sch:Person","nombre" : "Julio"}
+	],
+	"asignaturas" : [
+		{"nombre" : "WS",
+				"profesores" : [{"@id" : "https://xyz.com/persons/03","@type" : "sch:Person","nombre" : "Andrea"}],
+				"descripcion" : "Web Semantica"},
+		{"nombre" : "IA",
+				"profesores" : [{"@id" : "https://xyz.com/persons/04","@type" : "sch:Person","nombre" : "Jesus"}],
+				"descripcion" : "Inteligencia Artificial"},
+		{"nombre" : "PLN",
+				"profesores" : [{"@id" : "https://xyz.com/persons/04","@type" : "sch:Person","nombre" : "Jesus"}],
+				"descripcion" : "Procesamiento del Lenguaje Natural"},
+		{"nombre" : "AN",
+				"profesores" : [{"@id" : "https://xyz.com/persons/05","@type" : "sch:Person","nombre" : "Paco"}],
+				"descripcion" : "Algoritmica Numerica"},
+		{"nombre" : "PCD",
+				"profesores" : [{"@id" : "https://xyz.com/persons/06","@type" : "sch:Person","nombre" : "Abraham"}],
+				"descripcion" : "Programación para Ciencia de Datos"},
+		{"nombre" : "RID",
+				"profesores" : [{"@id" : "https://xyz.com/persons/07","@type" : "sch:Person","nombre" : "Tomas"},
+								{"@id" : "https://xyz.com/persons/08","@type" : "sch:Person","nombre" : "Juan"}],
+				"descripcion" : "Representacion e Intercambio de Datos"}
+
+	]
+}

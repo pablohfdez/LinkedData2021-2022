@@ -1,0 +1,130 @@
+{
+  "@graph":
+  [
+    {
+      "@context": {
+          "foaf": "http://xmlns.com/foaf/spec/#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "Person": "foaf:Person",
+          "firstname": "foaf:firstName",
+          "surname": "foaf:surname",
+          "age": "foaf:age",
+          "alma_mater": "foaf:alma_mater",
+          "parents": "foaf:parents",
+          "subjects": "foaf:subjects",
+          "Subject": "foaf:Subject",
+          "subject_name": "foaf:subject_name",
+          "Teacher": "foaf:Teacher",
+          "taught_by": "foaf:taught_by",
+          "description": "foaf:description"
+      }
+    },
+    {
+      "@id": "https://github.com/Pabloo22",
+      "@type": "Person",
+      "firstname": "Pablo",
+      "surname": "Ariño",
+      "age": {
+        "@type": "xsd:short",
+        "@value": 18
+      },
+      "alma_mater": "Polytechnic University of Madrid",
+      "parents": [
+        {
+          "@id": "",
+          "@type": "Person",
+          "firstname": "David",
+          "surname": "Ariño"
+        },
+        {
+          "@id": "",
+          "@type": "Person",
+          "firstname": "María Ángeles",
+          "surname": "Fernández"
+        }
+      ],
+      "subjects": [
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001011_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Algorítmica Numérica",
+          "taught_by": {
+            "@id": "https://www.webpgomez.com/",
+            "@type": "Teacher",
+            "firstname": "Paco",
+            "surname": "Gómez"
+          },
+          "description": "Curso introductorio a los métodos numéricos y su implementación en Matlab."
+        },
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001012_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Representación e Intercambio de Datos",
+          "taught_by": [
+            {
+            "@id": "http://www.upm.es/observatorio/vi/index.jsp?pageac=investigador.jsp&idInvestigador=6256",
+            "@type": "Teacher",
+            "firstname": "Juan Luis",
+            "surname": "Martín"
+            },
+            {
+              "@id": "https://www.upm.es/observatorio/vi/index.jsp?pageac=investigador.jsp&idInvestigador=6943",
+              "@type": "Teacher",
+              "firstname": "Tomás Enrique",
+              "surname": "Robles"
+            }
+          ],
+          "description": "La asignatura se centra en estudiar cómo se realiza el intercambio de datos entre aplicaciones distribuidas a través de Internet"
+        },
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001013_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Inteligencia Artificial",
+          "taught_by": {
+            "@id": "https://scholar.google.es/citations?user=KTG6p1cAAAAJ&hl=es",
+            "@type": "Teacher",
+            "firstname": "Jesús",
+            "surname": "Bobadilla"
+          },
+          "description": "La inteligencia artificial es una rama de la informática que estudia técnicas para simular el comportamiento inteligente en un computador."
+        },
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001014_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Procesamiento de Lenguaje Natural",
+          "taught_by": {
+            "@id": "https://scholar.google.es/citations?user=KTG6p1cAAAAJ&hl=es",
+            "@type": "Teacher",
+            "firstname": "Jesús",
+            "surname": "Bobadilla"
+          },
+          "description": "En este curso de introducción al Procesamiento del Lenguaje Natural se aprenderán los fundamentos de las\ntécnicas básicas para realizar análisis morfológicos y sintácticos de forma automática"
+        },
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001015_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Web Semántica, Linked Data y Grafos de Conocimiento",
+          "taught_by": {
+            "@id": "http://www.upm.es/observatorio/vi/index.jsp?pageac=investigador.jsp&idInvestigador=28407",
+            "@type": "Teacher",
+            "firstname": "Jesús Andrea",
+            "surname": "Arriaga"
+          },
+          "description": "El objetivo de esta asignatura es proporcionar la base teórica y práctica sobre los fundamentos metodológicos y\ntecnológicos implicados en la generación y publicación de datos en la Web de datos enlazados, así como en forma\nde grafos de conocimientos"
+        },
+        {
+          "@id": "https://www.upm.es/comun_gauss/publico/guias/2021-22/1S/GA_10CD_105001016_1S_2021-22.pdf",
+          "@type": "Subject",
+          "subject_name": "Programación para Ciencia de Datos",
+          "taught_by": {
+            "@id": "http://www.upm.es/observatorio/vi/index.jsp?pageac=investigador.jsp&idInvestigador=7643",
+            "@type": "Teacher",
+            "firstname": "Abraham",
+            "surname": "Gutiérrez"
+          },
+          "description": "La asignatura proporciona una visión práctica de la programación para tratamiento y visualización de datos,\nutilizando como lenguaje vehicular Python"
+        }
+      ]
+    }
+  ]
+}

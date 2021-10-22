@@ -1,0 +1,59 @@
+{
+    "@context":{
+        "foaf": "http://xmlns.com/foaf/spec/#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "Person": "foaf:Person",
+        "name": "foaf:name",
+        "family_name": "foaf:family_name",
+        "hometown": "rdfs:label",
+        "age": "foaf:age",
+        "almaMater": "rdfs:label",
+        "parentsName": "rdfs:label",
+        "motherName": "rdfs:label",
+        "fatherName": "rdfs:label",
+        "teacher": "rdfs:label ",
+        "description": "rdfs:label "
+    },
+    "@id": "https://github.com/carlota-upm",
+    "@type": "Person",
+    "name":"Carlota Medrano Lara",
+    "family_name":"Carlota Medrano Lara",
+    "hometown":"Madrid",
+    "age":"19",
+    "almaMater": "Universidad Politécnica de Madrid",
+    "parentsName":{
+        "motherName":"Beatriz",
+        "fatherName":"Raúl"
+    },
+    "subjects":[{
+        "name":"Algorítmica numérica",
+        "teacher":"Francisco Gómez",
+        "description":"Raúl"
+    },
+    {
+        "name":"Inteligencia artificial",
+        "teacher":"Jesús Bobadilla",
+        "description":"Redes neuronales"
+    },
+    {
+        "name":"Procesamiento del lenguaje natural",
+        "teacher":"Jesús Bobadilla",
+        "description":"-"
+    },
+    {
+        "name":"Programación para cincia de datos",
+        "teacher":"Francisco Gómez",
+        "description":"Python, Numpy y Pandas"
+    },
+    {
+        "name":"Representación e ntercambio de datos",
+        "teacher":"Tomás Robles y Juan Luis Martín",
+        "description":"HTML, CCS, XML, XML Schema y JSON"
+    },
+    {
+        "name":"Web Semántica, Linked Data y Grafos de Conocimiento",
+        "teacher":"Andrea Cimmino",
+        "description":"RDF, JSON-LD, RDFa"
+    }
+    ]
+}

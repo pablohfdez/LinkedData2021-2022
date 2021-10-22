@@ -1,0 +1,41 @@
+{
+    "@context" : {
+        "foaf": "http://xmlns.com/foaf/spec/#",
+        "name" : "foaf:name",
+        "surname" : "foaf:surname",
+        "age": "foaf:age",
+        "hometown": "foaf:homeTown",
+        "parents": "foaf:parents",
+        "subjects": "foaf: subjects",
+        "subject_name": "foaf: subject_name",
+        "teacher": "foaf: teacher",
+        "description": "foaf:description",
+    },
+    
+    "@id": "https://moodle.upm.es/usuarios/NoaChuArtzt#",
+    "@type": "https://moodle.upm.es/usuarios/Usuario#",
+    "name": "Noa",
+    "surname": "Chu Artzt",
+    "age": "18",
+    "hometown:": "Palma de Mallorca",
+    "parents": [
+        {"name":"Chris",
+        "surname": "Artzt"
+        },
+
+        {"name":"Henry",
+            "surname": "Chu Artzt"
+        }
+        ],
+    "subjects": [
+        {"subject_name": "Semantic Web, Linked Data and Knowledge Graphs", 
+        "teacher": "Andrea Cimmino Arriaga",
+        "description": "Conjunto de actividades desarrolladas en el seno de World Wide Web Consortium."
+        },
+        {"subject_name": "Inteligencia Artificial ", 
+        "teacher": "Jesus Bobadilla Sancho",
+        "description": "Introducción a los sistemas y agentes inteligentes."
+        }
+    ]
+    
+}

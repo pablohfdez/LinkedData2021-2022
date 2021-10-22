@@ -1,0 +1,64 @@
+[
+    {"@context":{
+        "sch": "https://schema.org/",
+        "nombre": "sch: name",
+        "apellido": "sch: familyName",
+        "ciudad": "sch: homeLocation",
+        "edad": "sch: age",
+        "universidad": "sch: affiliation",
+        "padres": "sch: childOf",
+        "descripcion": "sch: description",
+        "asignaturas": "sch: subjects",
+        "profesores": "sch: teachers"
+        }
+    },
+    {
+    "@id": "https://linkeddata.es/persons/01",
+    "@type": "sch:Person",
+    "nombre": "Raúl",
+    "apellido": "Andrino",
+    "ciudad": "Madrid",
+    "edad": 19,
+    "universidad": "Universidad Politécnica de Madrid",
+    "padres": [
+        {
+        "@id": "https://linkeddata.es/persons/02",
+        "@type": "sch: Person",
+        "nombre": "Juan",
+        "apellido": "Andrino"
+        },
+        {
+        "@id": "https://linkeddata.es/persons/03",
+        "@type": "sch: Person",
+        "nombre": "Cristina",
+        "apellido": "Gómez"
+        }
+    ],
+    "asignaturas": [
+        {
+        "nombre": "WS, LD y GC",
+        "profesores": [
+            {
+            "@id": "https://linkeddata.es/persons/04",
+            "@type": "sch: Person",
+            "nombre": "Andrea"
+            }
+        ],
+        "descripcion": "Web semántica, linked data y grafos de conocimiento"
+        },
+        {
+        "nombre": "IA",
+        "profesores": [
+            {
+            "@id": "https://linkeddata.es/persons/05",
+            "@type": "sch: Person",
+            "nombre": "Jesús"
+            }
+        ],
+        "descripcion": "Inteligencia Artificial"
+        }
+
+    ]
+    }
+   
+]

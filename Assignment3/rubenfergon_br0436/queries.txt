@@ -1,0 +1,76 @@
+1.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+select ?a {
+
+?y ?a dbo:Politician.
+
+
+}
+
+2.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct ?a {
+
+?y ?a dbo:Politician.
+
+FILTER(?a != rdf:type)
+}
+
+3.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+select distinct(count (?a) as ?count) {
+
+?x ?a dbo:Politician.
+FILTER (?a != rdf:type)
+}
+
+
+4.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?a ?y{
+
+?x ?a dbo:Politician.
+?a rdfs:range ?y.
+
+FILTER(?a != rdf:type)
+}
+
+5.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+select distinct ?m (count (?a) as ?count) {
+
+?x ?a dbo:Politician.
+FILTER (?a != rdf:type)
+?a rdfs:label ?m
+}
+
+
+6.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?x {
+
+dbo:Politician rdfs:subClassOf ?x.
+
+
+}
+
+7.
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+select distinct ?a {
+
+?x ?a dbo:Politician.
+
+
+FILTER (?a != rdf:type).
+FILTER STRENDS(?a , 'name').
+}

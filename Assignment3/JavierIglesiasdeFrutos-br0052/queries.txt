@@ -1,0 +1,26 @@
+1.prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?pred
+where { ?x a <http://dbpedia.org/ontology/Politician>;
+                    rdfs:label ?pred .}
+
+2.prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select DISTINCT ?pred
+where { ?x a <http://dbpedia.org/ontology/Politician>;
+                    rdfs:label ?pred .
+MINUS {?pred rdf:type ?x }
+
+3. prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select DISTINCT COUNT (?pred)
+where { ?x a <http://dbpedia.org/ontology/Politician>;
+           rdfs:label ?pred .
+MINUS {?x a rdf:type}}
+
+6.prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+select ?x where {?x rdfs:subClassOf dbo:Politician}
+
+7.prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?x
+where { ?x a <http://dbpedia.org/ontology/Politician>.
+FILTER REGEX (?x, "^name")}

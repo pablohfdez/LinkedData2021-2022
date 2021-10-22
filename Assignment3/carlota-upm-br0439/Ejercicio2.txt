@@ -1,0 +1,8 @@
+select distinct ?predicados
+where 
+{
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?predicados ?y. 
+FILTER (?predicados != rdf:type)
+
+}

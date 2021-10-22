@@ -1,0 +1,4 @@
+PREFIX db: <http://dbpedia.org/ontology/>
+SELECT ?y COUNT(DISTINCT ?x)
+WHERE { ?x ?y db:Politician .
+}

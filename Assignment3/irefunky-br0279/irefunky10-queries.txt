@@ -73,4 +73,4 @@ SELECT ?p
 WHERE {
 dbo:Politician  ?p ?x
 FILTER REGEX (?p, "name")
-}
+} 

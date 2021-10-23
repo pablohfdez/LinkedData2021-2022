@@ -1,0 +1,65 @@
+1.-
+select distinct ?z where{
+ ?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y}
+ 
+ CORRECIÓN:
+select ?z where{
+ ?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y}
+
+2.-
+select distinct  ?z where {
+ {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y}
+minus
+ {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y
+ filter regex(?z, rdf:type).}
+}
+
+3.-
+select distinct  count(?z) where {
+ {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y}
+minus
+ {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y
+ filter regex(?z, rdf:type).}
+}
+
+
+4.-
+select distinct ?z ?y where {
+ ?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y
+}
+
+CORRECCIÓN
+
+select distinct ?z ?y where {
+ {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y.}
+minus {?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y.
+ filter regex(?z, rdf:type)}
+}
+
+5.-
+select distinct count(?y) where{
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?z ?y}
+
+
+6.-
+select distinct ?x where{
+ <http://dbpedia.org/ontology/Politician> <http://www.w3.org/2000/01/rdf-schema#subClassOf>  ?x}
+
+7.-
+CORRECIÓN
+
+select distinct ?z where{
+ ?x a <http://dbpedia.org/ontology/Politician>.
+ ?x ?z ?y.
+ filter regex (?z , "name$", "i")
+}

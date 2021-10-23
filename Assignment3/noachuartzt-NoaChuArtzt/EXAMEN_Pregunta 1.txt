@@ -1,1 +1,1 @@
-SELECT ?x WHERE {<http://dbpedia.org/ontology/Politician> ?x  ?y}
+SELECT ?x WHERE {?s a <http://dbpedia.org/ontology/Politician>; ?x  ?y}

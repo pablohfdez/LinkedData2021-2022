@@ -1,0 +1,3 @@
+PREFIX ont: <http://dbpedia.org/ontology/>
+
+ASK WHERE {ont:Politician rdf:subClassof ?x}

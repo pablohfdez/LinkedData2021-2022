@@ -2,7 +2,7 @@ ejercicio1
 
 SELECT ?p
 WHERE {
-?s a <http://dbpedia.org/ontology/Politician>.
+?x a <http://dbpedia.org/ontology/Politician>.
 ?x ?p ?y
 }
 

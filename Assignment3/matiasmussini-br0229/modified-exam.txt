@@ -1,0 +1,32 @@
+question 1
+
+SELECT ?x WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z }
+
+question 2
+
+SELECT distinct ?x WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z . minus {?y a <http://dbpedia.org/ontology/Politician>. 
+?y ?x ?z . filter regex(?x, rdf:type).}}
+
+question 3
+
+SELECT COUNT(DISTINCT ?x) WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z. minus{?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?z. filter regex(?x, rdf:type).}}
+
+question 4
+
+SELECT distinct ?x ?z WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z . minus {?y a <http://dbpedia.org/ontology/Politician>. 
+?y ?x ?z . filter regex(?x, rdf:type).}}
+
+question 5
+
+SELECT COUNT(DISTINCT ?z) ?x WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z }
+
+question 6
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?y WHERE { <http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?y.}
+
+question 7
+
+SELECT ?x WHERE { ?y a <http://dbpedia.org/ontology/Politician>. ?y ?x ?z. 
+FILTER regex(?x, "name$")}

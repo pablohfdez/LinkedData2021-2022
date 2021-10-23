@@ -1,5 +1,5 @@
 PREFIX db: <http://dbpedia.org/ontology/>
-SELECT DISTINCT COUNT(?y)
-WHERE { ?x ?y db:Politician 
+SELECT COUNT(DISTINCT(?y))
+WHERE { db:Politician ?y ?x.
 FILTER(?y != rdf:type).
 }

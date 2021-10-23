@@ -1,5 +1,5 @@
 PREFIX db: <http://dbpedia.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?x
+SELECT DISTINCT ?x
 WHERE { db:Politician rdfs:subClassOf ?x.
 }

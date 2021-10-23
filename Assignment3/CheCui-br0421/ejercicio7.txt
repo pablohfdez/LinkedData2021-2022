@@ -1,5 +1,7 @@
 PREFIX db: <http://dbpedia.org/ontology/>
-SELECT DISTINCT ?y
-WHERE { db:Politician ?y ?x.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT  ?y
+WHERE { ?x rdf:type db:Politician.
+?x ?y ?z.
 FILTER regex(?y, "name$")
 }

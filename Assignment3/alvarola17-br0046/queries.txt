@@ -1,0 +1,31 @@
+1:
+select distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.}
+
+2:
+select distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.
+FILTER ( NOT EXISTS{ ?y rdf:type ?b })}
+
+3:
+select distinct (COUNT(distinct ?x) AS ?num) where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.
+FILTER ( NOT EXISTS{ ?y rdf:type ?b })}
+
+4:
+select distinct ?r where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.
+?x rdfs:range ?r.
+FILTER ( NOT EXISTS{ ?y rdf:type ?b })}
+
+5:
+select distinct ?x (COUNT(distinct ?b) AS ?num) where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.}
+
+6:
+select distinct * where {<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x}
+
+7:
+select distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?b.
+FILTER REGEX(?x,"name$")}

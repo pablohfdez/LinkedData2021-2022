@@ -1,0 +1,9 @@
+PREFIX ont: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT distinct ?y
+WHERE {{?x a ont:Politician}
+{?x ?y ?z}
+FILTER (?y != rdf:type)
+}
+LIMIT 100

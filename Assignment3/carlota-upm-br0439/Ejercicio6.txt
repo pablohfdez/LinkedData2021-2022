@@ -1,0 +1,1 @@
+select distinct  ?superclass where {<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?superclass. }

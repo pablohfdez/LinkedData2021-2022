@@ -1,0 +1,72 @@
+Alejandro Rasero.
+
+Querry 1:
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y where {
+
+?x a db:Politician ;
+   ?y ?o
+} 
+
+
+
+Query 2: 
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct ?y where {
+
+ db:Politician ?y ?o .
+ filter(?y != rdf:type)
+}
+
+
+
+Query 3:
+
+
+
+Query 4:
+
+
+
+
+Query 5:
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y (COUNT(?y) as ?yCount) where{
+
+ ?x a db:Politician ;
+    ?y ?o1
+ filter(?y != rdf:type)
+}
+
+
+
+Query 6:
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?o where{
+
+ db:Politician rdfs:subClassOf ?o
+}
+
+
+
+Query 7:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y where {
+
+ ?x a db:Politician ;
+    ?y ?o 
+ FILTER regex(?y, "name")
+}

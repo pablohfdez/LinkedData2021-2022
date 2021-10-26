@@ -12,8 +12,9 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT ?predicado
 WHERE{ ?instancia a <http://dbpedia.org/ontology/Politician> .
        ?instancia ?predicado ?o .
-       FILTER regex(?predicado, "^(?!.*rdf:type).*$")
+       FILTER (?predicado !=rdf:type)
      }
+     
 3- 
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -21,9 +22,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT count(DISTINCT ?predicado)
 WHERE{ ?instancia a <http://dbpedia.org/ontology/Politician> .
        ?instancia ?predicado ?o .
-       FILTER regex(?predicado, "^(?!.*rdf:type).*$")
+       FILTER (?predicado !=rdf:type)
      }
-
 
 4- 
 
@@ -32,7 +32,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT DISTINCT ?o
 WHERE{ ?instancia a <http://dbpedia.org/ontology/Politician> .
        ?instancia ?predicado ?o .
-       FILTER regex(?predicado, "^(?!.*rdf:type).*$")
+       FILTER (?predicado !=rdf:type)
      }
 
 5-
@@ -48,13 +48,13 @@ WHERE{ ?instancia a <http://dbpedia.org/ontology/Politician> .
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-ASK {<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?superclase}
-
+SELECT ?superclase 
+WHERE {<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?superclase}
 
 7- 
 
 SELECT ?predicado
 WHERE{ ?instancia a <http://dbpedia.org/ontology/Politician> .
        ?instancia ?predicado ?o .
-       FILTER regex(?predicado "name$")
+       FILTER regex(?predicado, "name$")
      }

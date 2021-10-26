@@ -1,52 +1,132 @@
 EJ 1
 
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX pol: <http://dbpedia.org/ontology/Politician>
+PREFIX pol: <http://dbpedia.org/ontology/>
 
 SELECT ?p
 WHERE {
-  ?a ?p pol:politician
+  ?s a pol:Politician .
+  ?s ?p ?o
 }
+
+
 
 
 EJ 2
 
+
+
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX pol: <http://dbpedia.org/ontology/Politician>
+PREFIX pol: <http://dbpedia.org/ontology/>
 
 SELECT distinct ?p
 WHERE {
-  ?a ?p pol:politician
+  ?s a pol:Politician .
+  ?s ?p ?o .
+  FILTER(?p !=rdf:type)
 }
+
+
+
 
 
 EJ 3
 
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pol: <http://dbpedia.org/ontology/>
+
+SELECT distinct COUNT(?p)
+WHERE {
+  ?s a pol:Politician .
+  ?s ?p ?o .
+  FILTER(?p !=rdf:type)
+}
+
+
+
+
+
+
+
 EJ 4
+
+
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pol: <http://dbpedia.org/ontology/>
+
+SELECT distinct ?p ?o
+WHERE {
+  ?s a pol:Politician .
+  ?s ?p ?o .
+  FILTER(?p !=rdf:type)
+}
+
+
+
+
 
 EJ 5
 
-EJ 6
+
+
+
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX dbo: <http://dbpedia.org/ontology/Politician>
+PREFIX pol: <http://dbpedia.org/ontology/>
 
-SELECT ?superClass WHERE {
-   dbo:politician rdfs:subClassOf ?superClass .
+SELECT distinct ?p count(?o)
+WHERE {
+  ?s a pol:Politician .
+  ?s ?p ?o .
 }
+
+
+
+
+
+EJ 6
+
+
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX pol: <http://dbpedia.org/ontology/>
+
+SELECT ?superClass 
+WHERE {
+    pol:Politician rdfs:subClassOf ?superClass .
+}
+
+
+
 
 EJ 7
 
+
+
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dbo: <http://dbpedia.org/ontology/Politician>
+PREFIX pol: <http://dbpedia.org/ontology/>
 
 SELECT ?p
 WHERE {
-  ?a ?p dbo:politician .
-  FILTER regex(?p,"$dbp:surname")
+  ?s a pol:Politician.
+  ?s ?p ?o .
+  FILTER regex(?p,"name$")
 }

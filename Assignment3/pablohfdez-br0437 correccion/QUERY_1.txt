@@ -1,0 +1,5 @@
+SELECT ?pred
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?pred ?o
+}

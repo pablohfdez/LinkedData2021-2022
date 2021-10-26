@@ -1,0 +1,67 @@
+ejercicio 1
+
+select ?predicados
+where {
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?x
+}
+
+
+ejercicio 2
+
+select DISTINCT ?predicados
+where {
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?o
+MINUS{FILTER(?predicados=rdf:type)}
+}
+
+ejercicio 3
+
+sselect COUNT(DISTINCT ?predicados)
+where {
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?x
+MINUS{FILTER(?predicados=rdf:type)}
+}
+
+
+ejercicio 4
+
+select DISTINCT ?predicados ?x
+where {
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?x
+MINUS{FILTER(?predicados=rdf:type)}
+}
+
+
+
+
+ejercicio 5
+
+select DISTINCT ?predicados COUNT(?x)
+where{
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?x
+}
+
+
+ejercicio 6
+
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?x
+WHERE {
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x
+}
+
+
+ejercicio 7 
+
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+select  ?predicados
+where {
+?instancia a <http://dbpedia.org/ontology/Politician>.
+?instancia ?predicados ?x
+FILTER REGEX(?predicados, "name$")
+}

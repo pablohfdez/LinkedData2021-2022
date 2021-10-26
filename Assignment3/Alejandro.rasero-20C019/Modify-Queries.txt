@@ -1,0 +1,97 @@
+Alejandro Rasero, modificacion de las queries del examen.
+
+Querry 1:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y where {
+
+?x a db:Politician ;
+   ?y ?o
+
+}
+
+
+Query 2:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct ?y where {
+
+ ?x a db:Politician .
+ ?x ?y ?o
+ filter(?y != rdf:type)
+
+}
+
+
+Query 3:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct (COUNT(distinct ?y) as ?pred) where {
+
+  ?x a db:Politician .
+  ?x ?y ?o .
+FILTER (?y != rdf:type )
+
+}
+
+
+Query 4:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select distinct ?y ?o where {
+
+  ?x a db:Politician .
+  ?x ?y ?o .
+
+FILTER (?y != rdf:type )
+
+}
+
+
+Query 5:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y (COUNT(distinct ?o1) as ?conteo) where{
+
+ ?x a db:Politician .
+ ?x ?y ?o1
+
+}
+
+
+Query 6:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?o where{
+
+ db:Politician rdfs:subClassOf ?o
+}
+
+
+Query 7:
+
+
+prefix db: <http://dbpedia.org/ontology/>
+
+select distinct ?y where {
+
+ ?x a db:Politician ;
+    ?y ?o 
+ FILTER regex(?y, "name")
+}

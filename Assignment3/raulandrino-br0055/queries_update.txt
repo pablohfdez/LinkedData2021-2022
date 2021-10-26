@@ -1,0 +1,62 @@
+Q1
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT ?p {
+    ?s a dbo:Politician;
+       ?p ?o.
+} LIMIT 100
+
+Q2
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT distinct ?p {
+    ?s a dbo:Politician;
+       ?p ?o.
+filter (?p != rdf:type)
+}
+
+Q3
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT distinct ?p {
+    ?s a dbo:Politician;
+       ?p ?o.
+filter (?p != rdf:type)
+}
+
+Q4
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT distinct ?p ?o {
+    ?s a dbo:Politician;
+       ?p ?o.
+filter (?p != rdf:type)
+}
+
+Q5
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT distinct COUNT(?o) ?p {
+    ?s a dbo:Politician;
+       ?p ?o.
+}
+
+Q6
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?x where {
+    dbo:Politician rdfs:subClassOf ?x.
+}
+
+Q7
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT ?p {
+    ?s a dbo:Politician;
+       ?p ?o.
+FILTER regex(?p, "name$")
+}

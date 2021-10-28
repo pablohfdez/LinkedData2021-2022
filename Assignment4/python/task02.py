@@ -12,7 +12,7 @@ Comenzamos con un grafo vacío
 """
 
 !pip install rdflib
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
+github_storage = "https://raw.githubusercontent.com/AndreaCimminoArriaga/LinkedData2021-2022/main/Assignment4/"
 
 from rdflib import Graph, Namespace, Literal
 g = Graph()

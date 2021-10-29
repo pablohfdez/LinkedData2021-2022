@@ -1,0 +1,2 @@
+select ?predicados where {?x a <http://dbpedia.org/ontology/Politician>. ?x ?predicados ?y}
+

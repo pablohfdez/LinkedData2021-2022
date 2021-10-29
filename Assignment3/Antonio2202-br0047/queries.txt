@@ -1,0 +1,43 @@
+Q1. 
+select  ?x 
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+} 
+
+Q2.
+select  distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+
+} 
+
+Q3.
+select  distinct Count(?x) where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+} 
+
+
+Q4.
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select  ?z
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+?x rdfs:range ?z
+} 
+
+
+Q5.
+select  distinct ?x count(?c) where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+} 
+
+Q6.
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select  ?x  where { <http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x.
+} 
+
+Q7.
+select  ?x 
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+FILTER regex (?x, "name")
+} 

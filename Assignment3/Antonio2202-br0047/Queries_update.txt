@@ -1,0 +1,46 @@
+Q1. 
+select  ?x 
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+} 
+
+Q2.
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select  distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+filter(?x != rdf:type)
+} 
+
+Q3.
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select  count distinct ?x where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+filter(?x != rdf:type)
+} 
+
+
+Q4.
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select  distinct ?x ?c
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+filter(?x != rdf:type)
+} 
+
+
+Q5.
+select  distinct ?x count(?c) where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+} 
+
+Q6.
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select  ?x  where { <http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x.
+} 
+
+Q7.
+select  ?x 
+where {?y a <http://dbpedia.org/ontology/Politician>.
+?y ?x ?c.
+FILTER  regex(?x, "name$")
+}  

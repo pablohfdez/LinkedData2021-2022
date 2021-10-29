@@ -1,0 +1,68 @@
+1.
+
+SELECT ?x
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?x ?y .
+}
+
+
+
+
+2.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?x
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?x ?y .
+	FILTER( ?x != rdfs:type)
+}
+
+
+3.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT COUNT(DISTINCT ?x)
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?x ?y .
+	FILTER( ?x != rdfs:type)
+}
+
+
+
+4.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?y
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?x ?y .
+	FILTER( ?x != rdfs:type)
+}
+
+5.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?x COUNT(DISTINCT(?y))
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?x ?y .
+
+}
+
+
+
+6.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?superclass
+WHERE{
+	<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?superclass .
+	
+}
+
+
+7.
+SELECT DISTINCT ?predicado
+WHERE{
+	?istance a <http://dbpedia.org/ontology/Politician> .
+	?istance ?predicado ?y .
+	FILTER regex(?predicado, "name$", "i") 
+}

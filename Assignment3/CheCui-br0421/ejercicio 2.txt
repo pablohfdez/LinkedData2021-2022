@@ -1,0 +1,5 @@
+PREFIX db: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?y
+WHERE { db:Politician ?y ?x.
+FILTER(?y != rdf:type).
+}

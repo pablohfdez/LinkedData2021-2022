@@ -1,0 +1,12 @@
+*para saber cual es su superclase*
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?x
+WHERE { <http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x }
+
+
+*para preguntar si tiene superclase*
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ASK { <http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x }
+

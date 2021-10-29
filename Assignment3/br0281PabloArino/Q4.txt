@@ -1,0 +1,9 @@
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?x ?z
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+    MINUS {?x a ?z} .
+}

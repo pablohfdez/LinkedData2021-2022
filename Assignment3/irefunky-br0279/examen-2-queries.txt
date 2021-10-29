@@ -1,0 +1,67 @@
+ejercicio1
+
+SELECT ?p
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+}
+
+
+ejercicio2
+
+SELECT DISTINCT ?p
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+FILTER(?p!=rdf:type)
+}
+
+
+ejercicio 3
+
+SELECT COUNT(DISTINCT ?p)
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+FILTER(?p!=rdf:type)
+}
+
+
+ejercicio4
+
+SELECT DISTINCT ?p ?y
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+FILTER(?p!=rdf:type)
+}
+
+
+
+ejercicio 5
+
+SELECT DISTINCT ?p COUNT(?y)
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+}
+
+
+ejercicio 6
+
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?x
+WHERE {
+<http://dbpedia.org/ontology/Politician> rdfs:subClassOf ?x
+}
+
+
+ejercicio 7 
+
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+SELECT  ?p
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?p ?y
+FILTER REGEX(?p, "name$")
+}

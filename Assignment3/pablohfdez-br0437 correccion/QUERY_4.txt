@@ -1,0 +1,6 @@
+SELECT DISTINCT ?pred ?o
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?pred ?o
+FILTER(?pred!=rdf:type)
+}

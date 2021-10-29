@@ -10,24 +10,24 @@ Original file is located at
 
 Comenzamos con un grafo vacío
 """
+from rdflib import Graph, Namespace, Literal
+from rdflib import FOAF
 
-!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/AndreaCimminoArriaga/LinkedData2021-2022/main/Assignment4/"
 
-from rdflib import Graph, Namespace, Literal
 g = Graph()
 
 """Creamos el recurso John Smith con su nombre completo"""
 
-fullName = Literal("John Smith")
+FULL_NAME = Literal("John Smith")
 EX = Namespace("http://example.org/")
-johnURI = EX.JohnSmith
+JOHN_URI = EX.JohnSmith
 
 """Generamos la sentencia añadiendo el predicado (propiedad)"""
 
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
-resource = (johnURI, VCARD.FN, fullName)
+resource = (JOHN_URI, VCARD.FN, FULL_NAME)
 
 print(resource)
 
@@ -35,7 +35,8 @@ g.add(resource)
 
 """Creamos otro recurso para Jane con su nombre completo e email
 
-Podemos abreviar un poco lo que hemos hecho en la tarea anterior, atención a los dobles paréntesis, add() acepta un solo parámetro en forma de tupla, no 3 parámetros.
+Podemos abreviar un poco lo que hemos hecho en la tarea anterior, atención a los dobles paréntesis, add() acepta un 
+solo parámetro en forma de tupla, no 3 parámetros.
 """
 
 g.add((EX.JaneSmith, VCARD.FN, Literal("Jane Smith")))
@@ -43,13 +44,12 @@ g.add((EX.JaneSmith, VCARD.hasEmail, Literal("jsmith@example.org")))
 
 """Añadimos una relación entre John y Jane mediante el vocabulario FOAF
 
-Hay ciertos espacios de nombres que son nativos a RDFlib, FOAF es uno de ellos y no hace falta que lo declaremos nosotros
+Hay ciertos espacios de nombres que son nativos a RDFLib, FOAF es uno de ellos y no hace falta que lo declaremos 
+nosotros.
 """
-
-from rdflib import FOAF
 
 g.add((EX.JohnSmith, FOAF.knows, EX.JaneSmith))
 
 """Vemos el resultado conjunto"""
 
-print(g.serialize(format="ttl").decode("UTF-8"))
+print(g.serialize(format="ttl"))

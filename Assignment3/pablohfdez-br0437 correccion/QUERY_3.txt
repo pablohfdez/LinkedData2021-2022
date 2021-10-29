@@ -1,0 +1,6 @@
+SELECT COUNT(DISTINCT ?pred)
+WHERE {
+?x a <http://dbpedia.org/ontology/Politician>.
+?x ?pred ?o
+FILTER(?pred !=rdf:type)
+}

@@ -1,0 +1,160 @@
+# 1:
+# Respuesta original:
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT ?y
+WHERE {
+    db:Politician ?y ?x
+}
+#-------------------------
+# Corrección:
+# Leí mal el enunciado y en vez de devolver los predicados de las INSTANCIAS de tipo Político,
+# devolví los predicados del tipo Político. La respuesta corregida es:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT ?y  
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z
+}
+
+#########################################
+# 2:
+# Respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?y
+WHERE {
+    db:Politician ?y ?x
+    MINUS {db:Politician a ?x}
+}
+
+#-------------------------
+# Corrección:
+# De nuevo, leí mal el enunciado y contesté con la clase político en lugar de con sus instancias...
+# Respuesta corregida:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?y
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+    MINUS {?x a ?z}
+}
+
+#########################################
+# 3:
+# Respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT COUNT(DISTINCT ?y)
+WHERE {
+    db:Politician ?y ?x
+    MINUS {db:Politician a ?x}
+}
+
+#-------------------------
+# Corrección:
+# Los mismos errores arrastrados del ejercicio anterior.
+# Respuesta corregida:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT COUNT(DISTINCT ?y)
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+    MINUS {?x a ?z}
+}
+
+#########################################
+# 4:
+# Respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?x ?z
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+    MINUS {?x a ?z} .
+}
+
+#-------------------------
+# Corrección:
+# En este caso sí me doy cuenta de que se piden las instancias de Político. 
+# Sin embargo me equivoco y en vez de devolver el predicado y el objeto como pide el ejercicio
+# devuelvo el sujeto y el objeto.
+# Respuesta corregida:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?y ?z
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+    MINUS {?x a ?z} .
+}
+
+#########################################
+# 5:
+# Respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?y COUNT(?z)
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+}
+
+#-------------------------
+# Corrección:
+# Al escribir: "SELECT DISTINCT ?y COUNT(DISTINCT ?z)" me daba el error "Virtuoso 42000 Error GBJON: Partitioned hash table must be of the chash type"
+# porque estaba usando el enpoint "https://dbpedia.org/sparql" en vez de "https://es.dbpedia.org/sparql". 
+# Aún no entiendo porqué ocurre esto pero al cambiar de endpoint el error se ha solucionado. En el examen no puse el "DISTINCT" dentro del "COUNT" porque
+# me salía el error comentado y la única manera de que no saliera era quitando el "DISTINCT" de ahí.
+# Respuesta corregida:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?y COUNT(DISTINCT ?z)
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z .
+}
+
+#########################################
+# 6:
+# Mantengo la respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?x
+WHERE {
+    db:Politician rdfs:subClassOf ?x .
+}
+
+#########################################
+# 7:
+# Mantengo la respuesta original:
+
+PREFIX db: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?y
+WHERE {
+    ?x a db:Politician .
+    ?x ?y ?z . 
+    FILTER REGEX(?y, "name$") .
+}
+
+
+

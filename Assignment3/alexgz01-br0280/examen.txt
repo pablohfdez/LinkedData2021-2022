@@ -1,0 +1,22 @@
+Ejercicio 1
+PREFIX dbp: <http://dbpedia.org/ontology/Politician>
+SELECT ?x WHERE {?x a dbp:Politician .}
+
+Ejercicio 2
+PREFIX dbp: <http://dbpedia.org/ontology/Politician>
+SELECT DISTINCT rdf:type ?x WHERE {?x a dbp:Politician .}
+
+Ejercicio 3
+PREFIX dbp: <http://dbpedia.org/ontology/Politician>
+COUNT DISTINCT ?x WHERE {?x a dbp:Politician .}
+
+Ejercicio 4
+
+Ejercicio 5
+
+Ejercicio 6
+PREFIX dbp: <http://dbpedia.org/ontology/Politician>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ASK  WHERE {?x a dbp:subClassOf .}
+
+Ejercicio 7

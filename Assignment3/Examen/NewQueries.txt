@@ -1,0 +1,67 @@
+Q1
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT ?y
+WHERE {{?x a dbo:Politician}
+{?x ?y ?z}
+}
+LIMIT 100
+
+Q2
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT distinct ?y
+WHERE {{?x a dbo:Politician}
+{?x ?y ?z}
+FILTER (?y != rdf:type)
+}
+LIMIT 100
+
+Q3
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT DISTINCT ?y 
+WHERE {{?x a dbo:Politician}
+{?x ?y ?c}
+filter(?y != rdf:type)
+}
+
+Q4
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?y ?c
+WHERE {{?x a dbo:Politician}
+{?x ?y ?c}
+filter(?y != rdf:type)
+}
+
+Q5
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?y COUNT(?c)
+WHERE{{?x a dbo:Politician}
+{?x ?y ?c}
+}
+
+Q6
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?y
+WHERE {dbo:Politician rdfs:subClassOf ?y}
+
+
+Q7
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT ?y
+WHERE {{?x a dbo:Politician}
+{?x ?y ?c}
+FILTER regex(?y, "name$")
+}

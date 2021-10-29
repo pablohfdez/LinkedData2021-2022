@@ -11,7 +11,7 @@ Original file is located at
 
 !pip install rdflib 
 !pip install owlrl
-github_storage = "https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2020-2021/master/Assignment4"
+github_storage = "https://raw.githubusercontent.com/AndreaCimminoArriaga/LinkedData2021-2022/main/Assignment4/"
 
 """Leemos el fichero RDF de la forma que lo hemos venido haciendo"""
 

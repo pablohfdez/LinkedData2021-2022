@@ -1,0 +1,8 @@
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+select count(distinct ?p)
+where {
+?instancia a dbo:Politician.
+?instancia ?p ?o
+FILTER(?p!=rdf:type)
+}

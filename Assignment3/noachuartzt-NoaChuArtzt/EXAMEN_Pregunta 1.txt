@@ -1,0 +1,1 @@
+SELECT ?x WHERE {?s a <http://dbpedia.org/ontology/Politician>; ?x  ?y}

@@ -8,55 +8,58 @@ Original file is located at
 
 **TASK 3: Statement-based query**
 """
+from rdflib import Graph, Namespace, Literal
+from rdflib import XSD
 
-!pip install rdflib
 github_storage = "https://raw.githubusercontent.com/AndreaCimminoArriaga/LinkedData2021-2022/main/Assignment4/"
 
 """Importamos example3.rdf en nuestro grafo"""
 
-from rdflib import Graph, Namespace, Literal
 g = Graph()
-g.parse(github_storage+"/resources/example3.rdf", format="xml")
+g.parse(github_storage + "/resources/example3.rdf", format="xml")
 
 """Listamos todos los recursos con la propiedad VCARD:FN"""
 
 VCARD = Namespace("http://www.w3.org/2001/vcard-rdf/3.0#")
 
-for s,p,o in g.triples((None, VCARD.FN, None)):
-  print(s)
+for s, p, o in g.triples((None, VCARD.FN, None)):
+    print(s)
 
 """Listamos ahora el nombre completo (VCARD:FN) de estos recursos"""
 
-for s,p,o in g.triples((None, VCARD.FN, None)):
-  print(o)
+for s, p, o in g.triples((None, VCARD.FN, None)):
+    print(o)
 
-"""Listamos ahora todos los recursos que tienen el nombre de familia "Smith", debemos tener en cuenta el tipo de dato de nuestro literales a la hora de realizar búsquedas. En nuestro ejemplo los literales están tipados como XSD String (http://www.w3.org/2001/XMLSchema#string) y al buscar debemos indicarlo, de lo contrario la comparación fallará aunque las cadenas de texto sean iguales."""
+"""Listamos ahora todos los recursos que tienen el nombre de familia "Smith", debemos tener en cuenta el tipo de dato 
+de nuestro literales a la hora de realizar búsquedas. En nuestro ejemplo los literales están tipados como XSD String 
+(http://www.w3.org/2001/XMLSchema#string) y al buscar debemos indicarlo, de lo contrario la comparación fallará aunque 
+las cadenas de texto sean iguales."""
 
-from rdflib import XSD
 for t in g.triples((None, VCARD.Family, Literal('Smith', datatype=XSD.string))):
-  print(t)
+    print(t)
 
-print(Literal(1, datatype=XSD.number).eq(Literal("1", datatype=XSD.string)))
-print(Literal(1, datatype=XSD.number).eq(Literal(1, datatype=XSD.string)))
-print(Literal(1).eq(Literal(1, datatype=XSD.number)))
-print(Literal(1, datatype=XSD.number).eq(Literal(1, datatype=XSD.number)))
-print(Literal(1).datatype)
-print(Literal("1").datatype)
+print(Literal(1, datatype=XSD.number).eq(Literal("1", datatype=XSD.string)))  # False
+print(Literal(1, datatype=XSD.number).eq(Literal(1, datatype=XSD.string)))  # False
+print(Literal(1).eq(Literal(1, datatype=XSD.number)))  # False
+print(Literal(1, datatype=XSD.number).eq(Literal(1, datatype=XSD.number)))  # True
+print(Literal(1).datatype)  # http://www.w3.org/2001/XMLSchema#integer
+print(Literal("1").datatype)  # None
 
 """Listamos todos los recursos que contienen un email"""
 
 FOAF = Namespace("http://xmlns.com/foaf/0.1/")
-for s,p,o in g.triples((None, FOAF.email, None)):
-  print(s,p,o)
+for s, p, o in g.triples((None, FOAF.email, None)):
+    print(s, p, o)
 
-"""Listamos ahora todos los sujetos que conocen a "Jane Smith" (VCARD:FN) por su nombre de pila (VCARD:Given). Cuando sepamos que vamos a obtener un solo resultado podemos emplear la función value indicando cada parámetro conocido (solo uno debe ser None)."""
+"""Listamos ahora todos los sujetos que conocen a "Jane Smith" (VCARD:FN) por su nombre de pila (VCARD:Given). 
+Cuando sepamos que vamos a obtener un solo resultado podemos emplear la función value indicando cada parámetro conocido 
+(solo uno debe ser None)."""
 
-janeSmithURI = g.value(subject=None, predicate=VCARD.FN, object=Literal("Jane Smith"))
+JANE_SMITH_URI = g.value(subject=None, predicate=VCARD.FN, object=Literal("Jane Smith"))
 
-knows = g.triples((None, FOAF.knows, janeSmithURI))
+knows = g.triples((None, FOAF.knows, JANE_SMITH_URI))
 
-for s,p,o in knows:
-  
-  givenName = g.value(subject=s, predicate=VCARD.Given, object=None)
+for s, p, o in knows:
+    givenName = g.value(subject=s, predicate=VCARD.Given, object=None)
 
-  print(givenName)
+    print(givenName)

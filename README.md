@@ -48,4 +48,7 @@ For example, I (assuming my Github username is 'acimmino') would upload two file
 
 **Assignment 3 - SPARQL.** Upload the SPARQL queries (one per file) and their results (one per file or in the same file of their queires). Before uploading the files create a folder with your YourGitHubID-StudentID (e.g., Assignment3/dchaves-u120106/) in [Assignment3 folder](https://github.com/AndreaCimminoArriaga/LinkedData2021-2022/tree/main/Assignment3).
 
+**Assignment 4 - Exercise on RDFLib**. Upload the .py or .ipynb files Task06 and Task07 after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment4/dchaves-u120106/) in [Assignment4](./Assignment4/) folder. (**deadline: 15th of November**)
+
+
 The following set of instructions will be updated as we progress during the course

@@ -22,4 +22,4 @@
 - [X] Includes a description of the application user interface
 
 ## Comments on the self-assessment
-_(If required)_
+We have converted the dataset "Asignación_patinetes.csv" from xlsx to csv.

@@ -39,6 +39,11 @@
       rdfs:range :City .
 
 
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:ObjectProperty ;
+           rdfs:domain dbr:City ;
+           rdfs:range :City .
+
 
 #################################################################
 #    Data properties
@@ -102,6 +107,9 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://dbpedia.org/resource/City
+dbr:City rdf:type owl:Class .
 
 
 ###  http://www.airqualitypredictor.org/ontology#City

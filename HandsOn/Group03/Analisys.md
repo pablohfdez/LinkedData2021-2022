@@ -1,6 +1,6 @@
 # Analysis.html
 
-**Hands-on assignment 3 - Summary of our ontology**
+**Hands-on assignment 2 - Summary of our ontology**
 
 The Publisher of our datasets is the Ayuntamiento de Madrid and it’s rightsholders the Dirección General de Servicios de Limpieza y Residuos. We analyzed it’s license and it has the following restrinctions:
 

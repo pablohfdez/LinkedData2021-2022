@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />   
+    <title> Analyse Data Set </title>
+    </head>
+    <body>
+    	
+    - Licensing of the data source
+
+      Los datos han sido publicados por el portal de datos abiertos de la Comunidad de Madrid. El propietario de los derechos del dataset es el Ayuntamiento de Madrid.
+
+      El dataset está sujeto a las condiciones de esta <a href="https://datos.madrid.es/egob/catalogo/aviso-legal"> Licencia </a> que permite:
+      Las presentes condiciones generales permiten la reutilización de los documentos y datos sometidos a ellas para fines comerciales y no comerciales,
+      siempre que dicho uso no constituya una actividad administrativa pública. Además, la reutilización autorizada incluye actividades como la copia, difusión, modificación, adaptación, extracción, reordenación y combinación de la información, entre otras.
+      A su vez el dataset está sujeto a la Ley 37/2007 que permite:
+      Que el contenido de la información no sea alterado, que no se desnaturalice el sentido de la información, que se mencione la fuente, que se mencione la fecha de la última actualización, entre otros.
+
+    - CSV content
+
+        - Gis_x: float que contiene la coordenada x de la estación según Geographic Information System.
+        - Gis_y: float que contiene la coordenada y de la estación según Geographic Information System.
+        - Fecha de alta: integer que contiene la fecha de alta de la estación.
+        - Distrito: string que contiene el distrito en el que se encuentra la estación.
+        - Barrio: string que contiene el barrio en el que se encuentra la estación.
+        - Calle: string que contiene el calle en el que se encuentra la estación.
+        - Nº finca: integer que contiene el número de finca en el que se encuentra la estación.
+        - Tipo de reserva: string que contiene la empresa que reserva la bicicleta.
+        - Número de plazas: integer que contiene el número de plazas totales de la estación.
+        - Longitud: float que contiene la longitud de la estación.
+        - Latitud: float que contiene la latitud de la estación.
+        - Dirección: string que contiene la dirección en el que se encuentra la estación.
+
+    
+    - Resource Naming Strategy
+
+    Dominio: <a href="http://app.group01.es"><http://app.group01.es</a>
+    Path: <a href="http://app.group01.es/ontology/bicimad"><http://app.group01.es/ontology/bicimad</a>
+
+    - Structure of the Ontology
+
+    Clases: Thing
+                Place
+                    Barrio, Dirección, Calle, Distrito
+                Estacion
+
+    ObjectProperties: isIN; rango: Place; Dominio: Place, Estacion
+
+    DataProperties: longuitud; rango: xsd:float; dominio: Estacion.
+                    latitud; rango: xsd:float; dominio: Estacion.
+                    identificador; rango: xsd:string; dominio: Estacion.
+                    nombre; rango: xsd:string; dominio: Place.
+                    numBicis; rango: xsd:int; dominio: Estacion.
+
+    </body>
+</html>

@@ -67,8 +67,8 @@
        rdfs:subClassOf :Place .
 
 
-###  http://app.group01.es/ontology/bicimad#Dirección
-:Dirección rdf:type owl:Class ;
+###  http://app.group01.es/ontology/bicimad#Direccion
+:Direccion rdf:type owl:Class ;
            rdfs:subClassOf :Place .
 
 

@@ -12,80 +12,80 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#company
-:company rdf:type owl:ObjectProperty ;
-         rdfs:domain :Building ;
-         rdfs:range :Company .
-
-
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#coordinates
 :coordinates rdf:type owl:ObjectProperty ;
              rdfs:domain :Building ;
              rdfs:range :Geo .
 
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#isIn
-:isIn rdf:type owl:ObjectProperty ;
-      rdfs:domain :Building ,
-                  :Calle ;
-      rdfs:range :Calle ,
-                 :District .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hires
+:hires rdf:type owl:ObjectProperty ;
+       rdfs:domain :Building ;
+       rdfs:range :Company .
+
+
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#locatedInArea
+:locatedInArea rdf:type owl:ObjectProperty ;
+               rdfs:domain :Building ,
+                           :Street ;
+               rdfs:range :District ;
+               rdfs:comment "No ponemos Street también, puesto que es subclase de District"@es .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#consume
-:consume rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Building ;
-         rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#dateOfService
-:dateOfService rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Company ;
-               rdfs:range xsd:dateTime .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#contractDate
+:contractDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Company ;
+              rdfs:range xsd:dateTime .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:domain :Building ,
-                     :Calle ,
                      :Company ,
-                     :District ;
+                     :District ,
+                     :Street ;
          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasPC
-:hasPC rdf:type owl:DatatypeProperty ;
-       rdfs:domain :District ;
-       rdfs:range xsd:int .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#lat
+:lat rdf:type owl:DatatypeProperty ;
+     owl:equivalentProperty :long ;
+     rdfs:domain :Geo ;
+     rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#latitud
-:latitud rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :Geo ;
-         rdfs:range xsd:decimal .
-
-
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#longitud
-:longitud rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Geo ;
-          rdfs:range xsd:decimal .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#long
+:long rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Geo ;
+      rdfs:range xsd:decimal .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#portalNumber
 :portalNumber rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Calle ;
+              rdfs:domain :Street ;
               rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#use
-:use rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Building ;
-     rdfs:range xsd:string .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :District ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#power
+:power rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Building ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Building ;
+      rdfs:range xsd:string .
 
 
 #################################################################
@@ -94,11 +94,6 @@
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Building
 :Building rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Calle
-:Calle rdf:type owl:Class ;
-       rdfs:subClassOf :District .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Company
@@ -111,6 +106,11 @@
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Geo
 :Geo rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Street
+:Street rdf:type owl:Class ;
+        rdfs:subClassOf :District .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,12 @@
+@prefix : <http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix	xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+:ExampleBuilding a  :Building;
+                 :hasName       "Biblioteca Ángel Gonzalez"^^xsd:string;
+                 :locatedInArea "Latina"^^xsd:string;
+                 :locatedInArea :ExampleStreet.
+
+:ExampleStreet   :locatedInArea "Latina"^^xsd:string;
+                 :hasName       "Granja de Torrehermosa"^^xsd:string;
+                 :portalNumber "2"^^xsd:int.

@@ -44,7 +44,7 @@
 		  </tr>
 		  <tr>
 		    <td>(vivo:)Building</td>
-		    <td>(vcard:)hasName, (rdf:)type, (dbp:)power, (sor:)hires, (gndo:)coordinates,  (dbp:)locatedInArea</td>
+		    <td>(vcard:)hasName, (rdf:)type, (dbp:)power, (sor:)hires, (gndo:)coordinates, (dbp:)locatedInArea</td>
 		    <td>data property: (xsd:string, xsd:number); object property: (Company, Geo, Street)</td>
 		  </tr>
 		  <tr>
@@ -54,7 +54,7 @@
 		  </tr>
 		  <tr>
 		    <td>(dbp:)Street</td>
-		    <td>(dbp:)locatedInArea,	(vcard:)hasName, (ctorg):numeroPortal</td>
+		    <td>(dbp:)locatedInArea, (vcard:)hasName, (ex2:)portalNumber</td>
 		    <td>data property: (xsd:string, xsd:number); object property: (District) </td>
 		  </tr>
 		  <tr>
@@ -64,7 +64,7 @@
 		  </tr>
 		  <tr>
 		   <td>(vivo:)Company</td>
-		   <td>(ids:)contractDate,(vcard:)hasName</td>
+		   <td>(ids:)contractDate, (vcard:)hasName</td>
 		   <td>data property: (xsd:string, xsd:number); object property: (None)</td>
 		  </tr>
 		</table>
@@ -88,6 +88,7 @@
 		<p><b>(rdf:)type -> </b> http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 
 		<p><b>(dbp:)power -> </b> http://dbpedia.org/ontology/power
+			
 		<p><b>(sor:)hires -> </b> http://purl.org/net/soron/hires
 
 		<p><b>(gndo:)coordinates -> </b> http://d-nb.info/standards/elementset/gnd#coordinates
@@ -96,7 +97,7 @@
 
 		<p><b>(schema:)postalCode -> </b> http://schema.org/postalCode
 
-		<p><b>(ctorg:)numeroPortal -> </b> http://purl.org/ctic/infraestructuras/organizacion#numeroPortal
+		<p><b>(ex2:)portalNumber -> </b> We will define it later.
 
 		<p><b>(geo:)lat -> </b> http://www.w3.org/2003/01/geo/wgs84_pos#lat
 

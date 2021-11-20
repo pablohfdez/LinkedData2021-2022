@@ -1,8 +1,6 @@
 {
-  "@graph":[
-    {
-      "@context": {
-        "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
+	"@context": {
+      "rdfs": "https://www.w3.org/2000/01/rdf-schema#",
         "sch": "https://schema.org/",
         "foaf": "http://xmlns.com/foaf/spec/#",
         "person":"foaf:person",
@@ -11,27 +9,25 @@
         "homeLocation":"sch:homeLocation",
         "parents":"sch:parents",
         "asignatura":"foaf:subject",
-        "nombre_obj":"foaf:nombre_obj",
-      }},
-    {
-      "@id":"",
-      "@type":"person",
-      "name":"Matías Mussini",
-      "age":"19",
-      "homeLocation":"Madrid",
-      "parents":{
-        {
-          "@id":"",
+        "nombre_obj":"foaf:nombre_obj"
+	},
+  	"@id":"",
+	"@type" : "sch:Person",
+	"name" : "Matías Mussini",
+	"age":"19",
+    "homeLocation":"Madrid",
+	"parents" : [
+		{"@id":"",
           "@type":"person",
-          "name":"Ricardo",
-        },
-        {
-          "@id":"",
+          "name":"Ricardo"},
+		{"@id":"",
           "@type":"person",
-          "name":"Roxana",
-        },
-      "asignaturas":{
-        "@id":"",
+          "name":"Roxana"}
+	],
+	"asignaturas":{
+      "@id":"gd",
         "@type":"asignatura",
-        "nombre_obj":"Web semántica",
-       },},],}
+        "nombre_obj":"Web semántica"
+
+    }
+}

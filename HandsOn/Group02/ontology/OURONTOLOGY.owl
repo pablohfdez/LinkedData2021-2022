@@ -1,0 +1,138 @@
+@prefix : <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2> .
+
+<http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#hasEnergyUse
+:hasEnergyUse rdf:type owl:ObjectProperty ;
+              rdfs:domain :Building ;
+              rdfs:range :Energy_use .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#isIn
+:isIn rdf:type owl:ObjectProperty ;
+      rdfs:domain :Building ;
+      rdfs:range :Area .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#amount
+:amount rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Energy_use ;
+        rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#classOfEnergy
+:classOfEnergy rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Energy_use ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Building ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Building ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Building ;
+             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Building ;
+              rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#hasMagnitude
+:hasMagnitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Energy_use ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#isFromDistrict
+:isFromDistrict rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Building ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#isFromMonth
+:isFromMonth rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :isFromYear ;
+             rdfs:domain :Energy_use ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#isFromYear
+:isFromYear rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Energy_use ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#isLocatedAt
+:isLocatedAt rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Building ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#kindOfSensor
+:kindOfSensor rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Energy_use ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#measuredWith
+:measuredWith rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Energy_use ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#xCoordinate
+:xCoordinate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Building ;
+             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#yCoordinate
+:yCoordinate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Building ;
+             rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#Area
+:Area rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#Building
+:Building rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#Energy_use
+:Energy_use rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

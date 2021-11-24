@@ -1,0 +1,26 @@
+@prefix : <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2> .
+
+:SportCenter    a                   :Building.
+:Energy_use_SportCenter     a       :Energy_use.
+
+:SportCenter    :hasId              2258;
+                :hasLatitude        "40.2937521494866"^^xsd:float;
+                :hasLongitude       "-3.7202936410904"^^xsd:float;
+                :isInDistrict       "SAN ISIDRO"^^xsd:string;
+                :xCoordinates       "438873.92"^^xsd:string;
+                :yCoordinates       "4472154.36"^^xsd:string;
+                :isLocatedAt        "CALLE ISAAC ALBENIZ, 1 28019 MADRID"^^xsd:string;
+
+                :hasEnergy_use      :Energy_use_SportCenter.   
+
+:Energy_use_SportCenter             :hasMagnitude       "kWh"^^xsd:string;
+                                    :classOfEnergy      "Energia activa"^^xsd:string;
+                                    :measuredWith       "AMBIBAMMATUTE_General"^^xsd:string;
+                                    :kindOfSensor       "Externo"^^xsd:string.
+               
+
+

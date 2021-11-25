@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />   
+        <meta charset="UTF-8" />  
         <title> Analysis </title>
     </head>
     <body>
-        <h4>Analysis over the dataset</h4>
-        <p>The analysis over the data set will be carried over in the resource naming strategy part for an easy understanding of our ontology.</p>
+        <h2> Analysis </h2>
+        <h4> Analysis of the dataset </h4>
+        <p> The analysis over the data set will be carried over in the resource naming strategy part for an easy understanding of our ontology.</p>
         
-	<h4>Licensing over the data source</h4>
-        	<p><u>Publisher:</u> Ayuntamiento de Madrid.</p>
+        <h4> Licensing over the data source </h4>
+        <p> Once readed the lincense of the Madrid´s City Council (Ayuntamiento de Madrid) which its responsible is the General Directorate of Sustainability and Environmental Control (a suborganization of the Madrid´s City Council) making both organizations the rightsholder of the data, we can elaborate the license we are going to use. The data will have a CC BY 4.0 license and adding some statements that must be followed in order to be compatible with the original license. These statements are: </p>
+        	<ul>
+            	<li> The data can not be desnaturilize
+                <li> It may not be indicated, insinuated or suggested that the Community of Madrid and the Madrid City Council participate on the proyect where the data will be used
+                <li> Last modification of the data must be included
+            </ul>
+        <p> That being the case we add some conditions to the CC BY 4.0 license in order to use it in harmony with the Madrid City Council´s one. </p>
         
-        	<p><u>Rights-holder:</u> Ayuntamiento de Madrid and highlighting the Dirección General de Sostenibilidad y Control Ambiental as the responsible of the data set.</p>
-        	
-	    	<p>Our license will follow up the requirements imposed by the current license of the data set we are using.</p>
-	    
-	<h4>Resource naming strategy</h4>
-		<p><u>Our Ontology:</u> <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology"><a/>.</p>
+        <h4>Resource naming strategy</h4>
+		<p><u>Our Ontology:</u> <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology">ont:(Group05_ontology_link)<a/> will be defined by the next table which its subjects, predicates and objects. We will show as well the ontology we are going to use which meet the requirements needed in order to develop a great and linked ontology.</p>
+        <p> The next image shows the onlogy graph in order to understand better the relations beetween each element of the ontology: </p>
+        
+        <img src="group05_ontology_graph.jpg">
+        <hr>
+        
 		<style>
 		table {
 		  font-family: arial, sans-serif;
@@ -34,7 +42,7 @@
 		  background-color: #dddddd;
 		}
 		</style>
-		<h4><u>(Data set analysis)</u></h4>
+		<h4>Data set analysis table</h4>
 
 		<table>
 		  <tr>
@@ -43,69 +51,60 @@
 		    <th>Object</th>
 		  </tr>
 		  <tr>
-		    <td>(vivo:)Building</td>
-		    <td>(vcard:)hasName, (rdf:)type, (dbp:)power, (sor:)hires, (gndo:)coordinates, (dbp:)locatedInArea</td>
-		    <td>data property: (xsd:string, xsd:number); object property: (Company, Geo, Street)</td>
+		    <td>Building</td>
+		    <td>hasName, type, power, hires, hasCoordinates, isIn</td>
+		    <td>data property: (xsd:string, xsd:int); object property: (Company, Geo, Street)</td>
 		  </tr>
 		  <tr>
-		    <td>(dbp:)District</td>
-		    <td>(vcard:)hasName, (schema:)postalCode</td>
-		    <td>data property: (xsd:string, xsd:number); object property: (None)  </td>
+		    <td>District</td>
+		    <td>hasName, hasCA</td>
+		    <td>data property: (xsd:string, xsd:int); object property: (None)  </td>
 		  </tr>
 		  <tr>
-		    <td>(dbp:)Street</td>
-		    <td>(dbp:)locatedInArea, (vcard:)hasName, (ex2:)portalNumber</td>
-		    <td>data property: (xsd:string, xsd:number); object property: (District) </td>
+		    <td>Street</td>
+		    <td>isIn, hasName, portalNumber</td>
+		    <td>data property: (xsd:string, xsd:int); object property: (District) </td>
 		  </tr>
 		  <tr>
-		    <td>(ex:)Geo</td>
-		    <td>(geo:)lat, (geo:)long</td>
+		    <td>Geo</td>
+		    <td>lat, (long</td>
 		    <td>data property: (xsd:decimal); object property: (None)</td>
 		  </tr>
 		  <tr>
-		   <td>(vivo:)Company</td>
-		   <td>(ids:)contractDate, (vcard:)hasName</td>
-		   <td>data property: (xsd:string, xsd:number); object property: (None)</td>
+		   <td>Company</td>
+		   <td>contractDate, hasName</td>
+		   <td>data property: (xsd:dateTimeStamp, xsd:number); object property: (None)</td>
 		  </tr>
 		</table>
-		<p><u>Subject URIs:</u>
-
-		<p><b>(vivo:)Building -> </b> http://vivoweb.org/ontology/core#Building
-
-		<p><b>(dbp:)District -> </b> http://dbpedia.org/ontology/District
-
-		<p><b>(dbp:)Street -> </b> http://dbpedia.org/ontology/Street
-
-		<p><b>(ex:)Geo -> </b> we will define it later.
-
-		<p><b>(vivo:)Company -> </b> http://vivoweb.org/ontology/core#Company
-
-		</p>
-		<p><u>Predicate URIs:</u>
-
-		<p><b>(vcard:)hasName -> </b> http://www.w3.org/2006/vcard/ns#hasName
-
-		<p><b>(rdf:)type -> </b> http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-
-		<p><b>(dbp:)power -> </b> http://dbpedia.org/ontology/power
-			
-		<p><b>(sor:)hires -> </b> http://purl.org/net/soron/hires
-
-		<p><b>(gndo:)coordinates -> </b> http://d-nb.info/standards/elementset/gnd#coordinates
-
-		<p><b>(dbp:)locatedInArea -> </b> http://dbpedia.org/ontology/locatedInArea
-
-		<p><b>(schema:)postalCode -> </b> http://schema.org/postalCode
-
-		<p><b>(ex2:)portalNumber -> </b> We will define it later.
-
-		<p><b>(geo:)lat -> </b> http://www.w3.org/2003/01/geo/wgs84_pos#lat
-
-		<p><b>(geo:)long -> </b> http://www.w3.org/2003/01/geo/wgs84_pos#long
-
-		<p><b>(ids:)contractDate -> </b> https://w3id.org/idsa/core/contractDate
-		</p>
-
-		</body>
-		</html>
-
+        
+        <p> Now we will see the URIs of each element of our ontology: </p>
+        
+        <ul>
+          <li><b> Subject URIs </b>
+            <ul>
+                <li>Building: <a href = "http://vivoweb.org/ontology/core#Building">vivo:Building<a/></li>
+                <li>District: 
+                <a href = "http://dbpedia.org/ontology/District">dbp:District<a/></li>
+                <li>Street: <a href = "http://dbpedia.org/ontology/Street">dbp:Street<a/></li>
+                <li>Geo: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Geo">ont:Geo</a></li>
+                <li>Company: <a href = "http://vivoweb.org/ontology/core#Company">vivo:Company</a></li>
+            </ul>
+          </li>
+          <li><b>Predicate URIs</b>
+            <ul>
+                <li>hasName: <a href = "http://www.w3.org/2006/vcard/ns#hasName">vcard:hasName</a> </li>
+                <li>type: <a href = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></li>
+                <li>power: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#power">ont:power</a></li>
+                <li>hires: <a href = "http://purl.org/net/soron/hires">sor:hires</a></li>
+                <li>coordinates: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasCoordinates">ont:hasCoordinates</a></li>
+                <li>isIn: <a href = "http://streamreasoning.org/ontologies/frappe#isIn">frappe:isIn</a></li>
+                <li>hasCA: <a href =  "http://www.arpenteur.org/ontology/Arpenteur.owl#hasCA">arp:hasCA</a></li>
+                <li>portalNumber: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#portalNumber">ont:portaNumber</a></li>
+                <li>lat: <a href = "http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a></li>
+                <li>long: <a href = "http://www.w3.org/2003/01/geo/wgs84_pos#long">geo:long</a></li>
+                <li>contactDate: <a href = "https://w3id.org/idsa/core/contractDate">ids:contractDate</a></li>
+            </ul>
+          </li>
+        </ul>
+	</body>
+</html>

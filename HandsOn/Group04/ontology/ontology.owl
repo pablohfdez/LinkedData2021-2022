@@ -1,13 +1,13 @@
-@prefix : <http://www.semanticweb.org/alvaro/ontologies/2021/10/untitled-ontology-4#> .
+@prefix : <http://www.airqualitypredictor.org/ontology#> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.airqualitypredictor.org/ontology> .
+@base <http://www.airqualitypredictor.org/ontology#> .
 
-<http://www.airqualitypredictor.org/ontology> rdf:type owl:Ontology .
+<http://www.airqualitypredictor.org/ontology#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -62,17 +62,10 @@
                   ] .
 
 
-###  http://www.airqualitypredictor.org/ontology#atHour
-:atHour rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Measurement ;
-        rdfs:range [ rdf:type rdfs:Datatype ;
-                     owl:onDatatype xsd:int ;
-                     owl:withRestrictions ( [ xsd:minInclusive "1"^^xsd:int
-                                            ]
-                                            [ xsd:maxInclusive "24"^^xsd:int
-                                            ]
-                                          )
-                   ] .
+###  http://www.airqualitypredictor.org/ontology#atStreet
+:atStreet rdf:type owl:DatatypeProperty ;
+          rdfs:domain :ControlStation ;
+          rdfs:range xsd:string .
 
 
 ###  http://www.airqualitypredictor.org/ontology#atYear

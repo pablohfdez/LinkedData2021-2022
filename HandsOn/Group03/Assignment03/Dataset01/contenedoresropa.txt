@@ -1,0 +1,190 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "IDENTIFICADOR_MINT",
+    "description": "Remove column IDENTIFICADOR_MINT"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_ELEMENTO",
+    "description": "Remove column COD_ELEMENTO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_NDP",
+    "description": "Remove column COD_NDP"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CLASE_VIAL",
+    "index": 0,
+    "description": "Move column CLASE_VIAL to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "CLASE_VIAL",
+    "index": 1,
+    "description": "Move column CLASE_VIAL to position 1"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DIRECCION_COMPLETA",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 2,
+    "description": "Split column DIRECCION_COMPLETA by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_VIAL",
+    "description": "Remove column COD_VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CENTRO",
+    "description": "Remove column CENTRO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PARTICULAS_VIAL",
+    "description": "Remove column PARTICULAS_VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "COD_BARRIO",
+    "description": "Remove column COD_BARRIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "TIPO_NÚMERO",
+    "description": "Remove column TIPO_NÚMERO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "cod",
+    "description": "Remove column cod"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UTMX",
+    "description": "Remove column UTMX"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UTMY",
+    "description": "Remove column UTMY"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCION AUXILIAR",
+    "description": "Remove column DIRECCION AUXILIAR"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCION_COMPLETA 2",
+    "description": "Remove column DIRECCION_COMPLETA 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCION_COMPLETA 1",
+    "description": "Remove column DIRECCION_COMPLETA 1"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "DIRECCION_COMPLETA",
+    "description": "Remove column DIRECCION_COMPLETA"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "HORARIO",
+    "description": "Remove column HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "OBSERVACIONES",
+    "description": "Remove column OBSERVACIONES"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NÚMERO",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 1,
+    "description": "Split column NÚMERO by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASE_VIAL",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calle",
+          "Calle ",
+          "calle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calle"
+      }
+    ],
+    "description": "Mass edit cells in column CLASE_VIAL"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LATITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LATITUD using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONGITUD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LONGITUD using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "CLASE_VIAL",
+    "expression": "join ([coalesce(cells['CLASE_VIAL'].value,''),coalesce(cells['NOMBRE_VIAL'].value,'')],' ')",
+    "onError": "keep-original",
+    "newColumnName": "DIRECCIÓN",
+    "columnInsertIndex": 2,
+    "description": "Create column DIRECCIÓN at index 2 based on column CLASE_VIAL using expression join ([coalesce(cells['CLASE_VIAL'].value,''),coalesce(cells['NOMBRE_VIAL'].value,'')],' ')"
+  }
+]

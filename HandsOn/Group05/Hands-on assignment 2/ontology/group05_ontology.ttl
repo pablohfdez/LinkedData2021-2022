@@ -12,10 +12,10 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#coordinates
-:coordinates rdf:type owl:ObjectProperty ;
-             rdfs:domain :Building ;
-             rdfs:range :Geo .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasCoordinates
+:hasCoordinates rdf:type owl:ObjectProperty ;
+                rdfs:domain :Building ;
+                rdfs:range :Geo .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hires
@@ -24,12 +24,12 @@
        rdfs:range :Company .
 
 
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#locatedInArea
-:locatedInArea rdf:type owl:ObjectProperty ;
-               rdfs:domain :Building ,
-                           :Street ;
-               rdfs:range :District ;
-               rdfs:comment "No ponemos Street también, puesto que es subclase de District"@es .
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#isIn
+:isIn rdf:type owl:ObjectProperty ;
+      rdfs:domain :Building ,
+                  :Street ;
+      rdfs:range :District ;
+      rdfs:comment "En el rango, no ponemos de manera adicional Street porque ya viene incluido en District al sur subclase de este Sujeto." .
 
 
 #################################################################
@@ -39,7 +39,13 @@
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#contractDate
 :contractDate rdf:type owl:DatatypeProperty ;
               rdfs:domain :Company ;
-              rdfs:range xsd:dateTime .
+              rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasCA
+:hasCA rdf:type owl:DatatypeProperty ;
+       rdfs:domain :District ;
+       rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasName
@@ -68,12 +74,6 @@
 :portalNumber rdf:type owl:DatatypeProperty ;
               rdfs:domain :Street ;
               rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#postalCode
-:postalCode rdf:type owl:DatatypeProperty ;
-            rdfs:domain :District ;
-            rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#power

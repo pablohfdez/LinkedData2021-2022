@@ -83,12 +83,25 @@
       "mode": "row-based"
     },
     "columnName": "Nº Finca",
-    "expression": "grel:value.replace('frente ','')\nvalue.replace('frente al ','')",
+    "expression": "grel:value.replace('frente ','')\nvalue.replace(' al ','')",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column Nº Finca using expression grel:value.replace('frente ','')\nvalue.replace('frente al ','')"
   },
+    {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Nº Finca",
+    "expression": "grel:value.replace('0,083333333','1')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Nº Finca using expression grel:value.replace('0,083333333','1')"
+  }
   {
     "op": "core/text-transform",
     "engineConfig": {

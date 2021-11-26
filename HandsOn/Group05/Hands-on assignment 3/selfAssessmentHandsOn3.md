@@ -22,4 +22,4 @@
 - [x] Is related to a column in the CSV file
 
 ## Comments on the self-assessment
-Everything is related to a class or a property in the ontology but the columns are with the original names of the dataset, although it is obvious to which element of the dataset the ontology refers (i.e. City, in the data set, is Street in the ontology).
+

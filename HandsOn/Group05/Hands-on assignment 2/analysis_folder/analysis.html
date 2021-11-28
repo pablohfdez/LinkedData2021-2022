@@ -19,7 +19,7 @@
         <p> That being the case we add some conditions to the CC BY 4.0 license in order to use it in harmony with the Madrid City Council´s one. </p>
         
         <h4>Resource naming strategy</h4>
-		<p><u>Our Ontology:</u> <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology">ont:(Group05_ontology_link)<a/> will be defined by the next table which its subjects, predicates and objects. We will show as well the ontology we are going to use which meet the requirements needed in order to develop a great and linked ontology.</p>
+		<p><u>Our Ontology:</u> <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology">epower:(Group05_ontology_link)<a/> will be defined by the next table which its subjects, predicates and objects. We will show as well the ontology we are going to use which meet the requirements needed in order to develop a great and linked ontology.</p>
         <p> The next image shows the onlogy graph in order to understand better the relations beetween each element of the ontology: </p>
         
         <img src="group05_ontology_graph.jpg">
@@ -52,13 +52,18 @@
 		  </tr>
 		  <tr>
 		    <td>Building</td>
-		    <td>hasName, type, power, hires, hasCoordinates, isIn</td>
-		    <td>data property: (xsd:string, xsd:int); object property: (Company, Geo, Street)</td>
+		    <td>hasName, power, hires, hasCoordinates, isIn</td>
+		    <td>data property: (xsd:string, xsd:int); object property: (Company, Location, Street)</td>
+		  </tr>
+		  <tr>
+		    <td>City</td>
+		    <td>hasName</td>
+		    <td>data property: (xsd:string); object property: (None)  </td>
 		  </tr>
 		  <tr>
 		    <td>District</td>
-		    <td>hasName, hasCA</td>
-		    <td>data property: (xsd:string, xsd:int); object property: (None)  </td>
+		    <td>hasName, hasCA, isIn</td>
+		    <td>data property: (xsd:string, xsd:int); object property: (City)  </td>
 		  </tr>
 		  <tr>
 		    <td>Street</td>
@@ -66,14 +71,31 @@
 		    <td>data property: (xsd:string, xsd:int); object property: (District) </td>
 		  </tr>
 		  <tr>
-		    <td>Geo</td>
-		    <td>lat, (long</td>
+		    <td>Location</td>
+		    <td>lat, long</td>
 		    <td>data property: (xsd:decimal); object property: (None)</td>
 		  </tr>
 		  <tr>
-		   <td>Company</td>
-		   <td>contractDate, hasName</td>
-		   <td>data property: (xsd:dateTimeStamp, xsd:number); object property: (None)</td>
+		  	<td>Company</td>
+		  	<td>contractDate, hasName</td>
+		  	<td>data property: (xsd:dateTimeStamp, xsd:number); object property: (None)</td>
+		  </tr>
+		  <tr>
+		  	<td>
+			<ul>
+			    <h4>Types of Builgings (subclasses)</h4>
+			    <li>Administrative</li>
+			    <li>Cultural</li>
+			    <li>Educational</li>
+			    <li>Enviromental</li>
+			    <li>Mixed</li>
+			    <li>Sanitary</li>
+			    <li>Security</li>
+		       	    <li>Social</li>
+			    <li>Sport</li>
+			    <li>Warehouse</li>
+			</ul>
+            		</td>
 		  </tr>
 		</table>
         
@@ -82,24 +104,23 @@
         <ul>
           <li><b> Subject URIs </b>
             <ul>
-                <li>Building: <a href = "http://vivoweb.org/ontology/core#Building">vivo:Building<a/></li>
+                <li>Building: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Building">epower:Building<a/></li>
                 <li>District: 
                 <a href = "http://dbpedia.org/ontology/District">dbp:District<a/></li>
                 <li>Street: <a href = "http://dbpedia.org/ontology/Street">dbp:Street<a/></li>
-                <li>Geo: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Geo">ont:Geo</a></li>
-                <li>Company: <a href = "http://vivoweb.org/ontology/core#Company">vivo:Company</a></li>
+                <li>Location: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Location">epower:Location</a></li>
+                <li>Company: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#Company">epower:Company<a/></li>
             </ul>
           </li>
           <li><b>Predicate URIs</b>
             <ul>
                 <li>hasName: <a href = "http://www.w3.org/2006/vcard/ns#hasName">vcard:hasName</a> </li>
-                <li>type: <a href = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a></li>
-                <li>power: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#power">ont:power</a></li>
+                <li>power: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#power">epower:power</a></li>
                 <li>hires: <a href = "http://purl.org/net/soron/hires">sor:hires</a></li>
-                <li>coordinates: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasCoordinates">ont:hasCoordinates</a></li>
+                <li>coordinates: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#hasCoordinates">epower:hasCoordinates</a></li>
                 <li>isIn: <a href = "http://streamreasoning.org/ontologies/frappe#isIn">frappe:isIn</a></li>
                 <li>hasCA: <a href =  "http://www.arpenteur.org/ontology/Arpenteur.owl#hasCA">arp:hasCA</a></li>
-                <li>portalNumber: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#portalNumber">ont:portaNumber</a></li>
+                <li>portalNumber: <a href = "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#portalNumber">epower:portaNumber</a></li>
                 <li>lat: <a href = "http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a></li>
                 <li>long: <a href = "http://www.w3.org/2003/01/geo/wgs84_pos#long">geo:long</a></li>
                 <li>contactDate: <a href = "https://w3id.org/idsa/core/contractDate">ids:contractDate</a></li>

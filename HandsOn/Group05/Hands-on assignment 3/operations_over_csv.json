@@ -126,12 +126,6 @@
     "description": "Split column Dirección by separator"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "Dirección 2",
-    "newColumnName": "portalNumber",
-    "description": "Rename column Dirección 2 to portalNumber"
-  },
-  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -150,51 +144,16 @@
     "description": "Remove column Dirección 3"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "Uso del edificio",
-    "newColumnName": "use",
-    "description": "Rename column Uso del edificio to use"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Puesta en servicio",
-    "newColumnName": "dateOfService",
-    "description": "Rename column Puesta en servicio to dateOfService"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Potencia KWp",
-    "newColumnName": "consume",
-    "description": "Rename column Potencia KWp to consume"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Centro",
-    "newColumnName": "Building",
-    "description": "Rename column Centro to Building"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Código Ayto",
-    "newColumnName": "CA",
-    "description": "Rename column Código Ayto to CA"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Empresa instaladora",
-    "newColumnName": "Company",
-    "description": "Rename column Empresa instaladora to Company"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Distrito",
-    "newColumnName": "District",
-    "description": "Rename column Distrito to District"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Dirección 1",
-    "newColumnName": "Street",
-    "description": "Rename column Dirección 1 to Street"
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Código Ayto",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Código Ayto using expression value.toNumber()"
   }
 ]

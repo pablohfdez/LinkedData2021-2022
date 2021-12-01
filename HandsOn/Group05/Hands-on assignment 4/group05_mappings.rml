@@ -1,0 +1,170 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix dbp: <http://dbpedia.org/property/>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix ids: <https://w3id.org/idsa/core/>.
+@prefix dbp: <http://dbpedia.org/ontology>.
+@prefix sor: <http://purl.org/net/soron/>.
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#>.
+@prefix arp: <http://www.arpenteur.org/ontology/Arpenteur.owl#>.
+@prefix frappe: <http://streamreasoning.org/ontologies/frappe#i>.
+@base epower: <http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology>.
+
+<#TriplesMap1>  
+   rml: logicalSource [
+      rml: source “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ];   
+
+   rr: subjectMap [
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}” ;
+      rr: termType  rr: IRI ; rr: class  epower: Building ];   
+
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant  vcard: hasName ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Centro” ; rr: termType  rr: Literal ]
+   ];
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant  epower: power ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Potencia KWp” ; rr: termType  rr: Number ]
+   ];
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant sor: hires ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: parentTriplesMap <#TriplesMap6> ]
+   ];
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant  epower: hasCoordinates ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: parentTriplesMap <#TriplesMap5>]
+   ];
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant  frappe: isIn ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: parentTriplesMap <#TriplesMap4> ]
+   ];
+
+<#TriplesMap2>
+   rml: logicalSource [
+      rml: source “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ] ;   
+
+   rr: subjectMap [
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}” ;
+      rr: termType  rr: IRI ; rr: class  dbp: City ] ;   
+
+   rr: predicateObjectMap [
+      rr: predicateMap [ 
+         rr: constant  vcard: hasName; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference  “Ciudad” ; rr: termType  rr: Literal ]
+   ];
+
+<#TriplesMap3>
+   rml: logicalSource [
+      rml: source  “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ] ;
+
+   rr: subjectMap[
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}”;
+      rr: termType  rr: IRI ;  rr: class  dbp: District ] ;
+
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  vcard: hasName ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Distrito” ; rr: termType  rr: Literal ]
+   ];
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  arp: “Código Ayto” ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference 1046 ; rr: termType  rr: Number ]
+   ];
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  frappe: isIn ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: parentTriplesMap <#TriplesMap2> ]
+   ];
+
+<#TriplesMap4>
+   rml: logicalSource [
+      rml: source  “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ] ;
+
+   rr: subjectMap[
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}”;
+      rr: termType  rr: IRI ;  rr: class  dbp: Street ] ;
+
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  frappe: isIn ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: parentTriplesMap <#TriplesMap3> ]
+   ];  
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  vcard: hasName ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Calle”; rr: termType  rr: Literal ]
+   ] ;   
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  epower: portalNumber ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Portal nº” ; rr: termType  rr: Number ]
+   ];
+
+<#TriplesMap5>
+   rml: logicalSource [
+      rml: source  “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ] ;
+
+   rr: subjectMap[
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}”;
+      rr: termType  rr: IRI ;  rr: class  epower: Geo ] ;
+
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  geo: lat ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Latitud” ; rr: termType  rr: Decimal ]
+   ];
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  geo: long ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Longitud” ; rr: termType  rr: Decimal ]
+   ];
+
+<#TriplesMap6>
+   rml: logicalSource [
+      rml: source  “inventario-instalaciones-fotovoltaicas-2020-updated.csv” ;
+      rml: referenceFormulation  ql: CSV ] ;
+
+   rr: subjectMap[
+      rr: template “http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Num}”;
+      rr: termType  rr: IRI ;  rr: class  epower: Company ] ;
+
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  ids: contractDate ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “12/09/2019 21:00:00”; rr: termType  rr: Literal ]
+   ];
+   rr: predicateObjectMap[
+      rr: predicateMap [
+         rr: constant  vcard: hasName ; rr: termType  rr: IRI ]
+      rr: objectMap [
+         rml: reference “Empresa instaladora” ; rr: termType  rr: Literal ]
+   ];

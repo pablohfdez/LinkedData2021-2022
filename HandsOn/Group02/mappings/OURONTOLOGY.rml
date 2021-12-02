@@ -1,0 +1,111 @@
+@prefix : <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@base <http://www.semanticweb.org/raulr/ontologies/2021/10/untitled-ontology-2> .
+
+
+
+<#TriplesMap1>
+	rml:logicalSource [
+		rml:source "consumo_energia_edificios-updated.csv";
+			rml:referenceFormulation ql:CSV ];
+	rr:subjectMap [
+		rr:class :Area];
+		
+
+<#TriplesMap2>
+	rml:logicalSource
+		rml:source "consumo_energia_edificios-updated.csv";
+			rml:referenceFormulation ql:CSV ];
+
+	rr:subjectMap [
+		rr:class :Building];
+		
+	rr:predicateObjectMap [
+		rr:predicateMap :xCoordinate;
+		rr:objectMap [ rml:reference “COORDENADA-X”;  xsd:float ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap :yCoordinate;
+		rr:objectMap [ rml:reference “COORDENADA-Y”;  xsd:float ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap :hasId;
+		rr:objectMap [ rml:reference “ID”;  xsd:integer ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap  :description;
+		rr:objectMap [ rml:reference “EDIFICIO”;  xsd:string ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap :isLocatedAt; 
+		rr:objectMap [ rml:reference “TIPO DE VIA“ ;  xsd:string ]
+		];
+
+    rr:predicateObjectMap [
+		rr:predicateMap  :isLocatedAt;
+		rr:objectMap [ rml:reference “NOMBRE DE LA VIA”;  xsd:string ]
+
+	rr:predicateObjectMap [
+		rr:predicateMap :isFromDistrict; 
+		rr:objectMap [ rml:reference “DISTRITO”;  xsd:string ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap :isIn;
+		rr:objectMap [  rml:parentTripleMap  <#TriplesMap1>]
+		];
+
+<#TriplesMap3>
+	rml:logicalSource [
+		rml:source "consumo_energia_edificios-updated.csv";
+			rml:referenceFormulation ql:CSV ];
+
+	rr:subjectMap [
+		rr:class :Energy_use];
+
+	rr:predicateObjectMap [
+		rr:predicateMap  :Amount; 
+		rr:objectMap [ rml:reference “CONSUMO”;  xsd:float ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap  :measuredWith;
+		rr:objectMap [ rml:reference “TIPO”;  xsd:string ]
+		];
+
+	
+	rr:predicateObjectMap [
+		rr:predicateMap  :classOfEnergy; 
+		rr:objectMap [ rml:reference “CLASE”;  xsd:string]
+        ];
+
+	rr:predicateObjectMap [
+		rr:predicateMap  :isFromYear; 
+		rr:objectMap [ rml:reference “AÑO”;  xsd:integer ]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap  :isFromMonth;
+		rr:objectMap [ rml:reference “MES”;  xsd:integer ]
+		];
+
+	rr:predicateObjectMap [ 
+		rr:predicateMap :hasMagnitude; 
+		rr:objectMap [rml:reference “UNIDADES“ ;  xsd:string]
+		];
+
+	rr:predicateObjectMap [
+		rr:predicateMap :hasEnergyUse;
+		rr:objectMap [  rml:parentTripleMap  <#TriplesMap2>]
+		];

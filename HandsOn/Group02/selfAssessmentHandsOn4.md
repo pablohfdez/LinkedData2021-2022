@@ -28,4 +28,4 @@
 - [] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-No comments
+The RML and the YML file are done. Unfortunately, after many tries, we were not able to manage to open the Helio program.

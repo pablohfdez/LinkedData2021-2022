@@ -1,0 +1,40 @@
+CODIGO_CORTO,DIRECCION,NOM_TIPO
+4,Plaza de España,UrbanTraffic
+8,Entre C/ Alcalá y C/ O’ Donell ,UrbanTraffic
+11,Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara,UrbanTraffic
+16,C/ Arturo Soria  esq. C/  Vizconde de los Asilos ,UrbanBackground
+17,C/. Juan Peñalver,UrbanBackground
+18,Calle Farolillo - C/Ervigio,UrbanBackground
+24,Casa de Campo  (Terminal del Teleférico),Suburban
+27,"C/. Júpiter, 21 (Barajas) ",UrbanBackground
+35,Plaza del Carmen esq. Tres Cruces. ,UrbanBackground
+36,Avd. Moratalaz  esq. Camino de los Vinateros,UrbanTraffic
+38,Avda. Pablo Iglesias esq. C/ Marqués de Lema,UrbanTraffic
+39,Avd. Betanzos esq. C/  Monforte de Lemos ,UrbanTraffic
+40,C/ Arroyo del Olivar  esq. C/  Río Grande. ,UrbanBackground
+47,C/ Juan de Mariana / Pza. Amanecer Mendez Alvaro,UrbanBackground
+48,C/ Jose Gutierrez Abascal,UrbanTraffic
+49,Paseo Venezuela- Casa de Vacas,UrbanBackground
+50,Plaza Castilla (Canal),UrbanTraffic
+54,Avda La Gavia / Avda. Las Suertes,UrbanBackground
+55,C/ Riaño (Barajas) ,UrbanBackground
+56, Pza. Elíptica - Avda. Oporto,UrbanTraffic
+57,C/ Princesa de Eboli esq C/ Maria Tudor,UrbanBackground
+58,Avda. La Guardia,Suburban
+59,Parque Juan Carlos I (frente oficinas mantenimiento),Suburban
+60,Plaza Tres Olivos ,UrbanBackground
+38,Avd. Pablo Iglesias esq. C/ Marqués de Lema,Meteorologic
+56,Pza. Elíptica - Avda. Oporto,Meteorologic
+102,"C/ Fuente Carantona, 8",Meteorologic
+103,"C/ Arroyo Bueno, 53",Meteorologic
+104,Embajadores,Meteorologic
+106,Autovía M-30 Km. 21.700,Meteorologic
+107,"Ctra. de Canillas, 2",Meteorologic
+108,C.D.M. Peñagrande,Meteorologic
+109,"Plaza de Chamberí, 4",Meteorologic
+110,"C/ Mayor, 72",Meteorologic
+111,"C/ Principe de Vergara, 142",Meteorologic
+112,"Avda. Albufera, 42",Meteorologic
+113,"Avda. Albufera, 42",Meteorologic
+114,"Paseo de la Chopera, 10",Meteorologic
+115,"Paseo de la Chopera, 10",Meteorologic

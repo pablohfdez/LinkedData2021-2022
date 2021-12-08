@@ -24,7 +24,7 @@
 		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Centro}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:Building 
-];   
+	];   
 
 	rr:predicateObjectMap [
     	rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
@@ -34,8 +34,33 @@
 	rr:predicateObjectMap [
     	rr:predicateMap [ rr:constant  epower:power ; rr:termType  rr:IRI ];
     	rr:objectMap [ rml:reference "Potencia KWp" ; rr:termType  rr:Number ]
-	].
+	];
+	
+	
 
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant  frappe:isIn ; rr:termType  rr:IRI ];
+		rr:objectMap [ 
+			rr:parentTriplesMap <#TriplesMap4>;
+			rr:joinCondition [ rr:child " "; rr:parent " " ];
+		];		
+	];
+	
+	rr:predicateObjectMap [
+    	rr:predicateMap [ rr:constant  epower:hasCoordinates ; rr:termType  rr:IRI ]
+		rr:objectMap [ 
+			rr:parentTriplesMap <#TriplesMap5>;
+			rr:joinCondition [ rr:child " "; rr:parent " " ];
+		];	
+	];
+		
+	rr:predicateObjectMap [
+    	rr:predicateMap [ rr:constant sor:hires ; rr:termType  rr:IRI ]
+		rr:objectMap  [
+			rr:parentTriplesMap <#TriplesMap6>;
+			rr:joinCondition [ rr:child " "; rr:parent " " ];
+		];	
+	].
 
 <#TriplesMap2> a rr:TriplesMap;  
 	rml:logicalSource [
@@ -49,10 +74,11 @@
 		rr:class  epower:City 
 	];     
 
-   rr:predicateObjectMap [
-   		rr:predicateMap [ rr:constant  vcard:hasName; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Ciudad" ; rr:termType  rr:Literal ]
-   ].
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant  vcard:hasName; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Ciudad" ; rr:termType  rr:Literal ]
+	].
+
 
 <#TriplesMap3> a rr:TriplesMap;
 	rml:logicalSource [
@@ -66,15 +92,23 @@
 		rr:class  epower:District 
 	];   
 
-   rr:predicateObjectMap[
-   		rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
-   		rr:objectMap [ rml:reference "Distrito" ; rr:termType  rr:Literal ]
-   ];
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Distrito" ; rr:termType  rr:Literal ]
+	];
 
-   rr:predicateObjectMap[
-   		rr:predicateMap [ rr:constant  arp:hasCA ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Código Ayto" ; rr:termType  rr:Number ]
-   ].
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  arp:hasCA ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Código Ayto" ; rr:termType  rr:Number ]
+	];
+
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  frappe:isIn ; rr:termType  rr:IRI ]
+		rr:objectMap [ 
+			rr:parentTriplesMap <#TriplesMap2>;
+			rr:joinCondition [ rr:child " "; rr:parent " " ];
+		];
+	].
 
 
 <#TriplesMap4> a rr:TriplesMap; 
@@ -89,15 +123,23 @@
 		rr:class  epower:Street 
 	];   
 
-   rr:predicateObjectMap[
-      	rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Calle"; rr:termType  rr:Literal ]
-   ] ; 
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Calle"; rr:termType  rr:Literal ]
+	]; 
 
-   rr:predicateObjectMap[
-      	rr:predicateMap [ rr:constant  epower:portalNumber ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Portal nº" ; rr:termType  rr:Number ]
-   ].
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  epower:portalNumber ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Portal nº" ; rr:termType  rr:Number ]
+	];
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  frappe:isIn ; rr:termType  rr:IRI ]
+		rr:objectMap [ 
+			rml:parentTriplesMap <#TriplesMap3>;
+			rr:joinCondition [ rr:child " "; rr:parent " " ];
+		];
+	].
+
 
 
 <#TriplesMap5> a rr:TriplesMap;
@@ -112,15 +154,15 @@
 		rr:class  epower:Geo 
 	];   
 
-   rr:predicateObjectMap[
-      	rr:predicateMap [ rr:constant  geo:lat ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Latitud" ; rr:termType  rr:Decimal ]
-   ];
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  geo:lat ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Latitud" ; rr:termType  rr:Decimal ]
+	];
 
-   rr:predicateObjectMap[
-      	rr:predicateMap [ rr:constant  geo:long ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Longitud" ; rr:termType  rr:Decimal ]
-   ].
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  geo:long ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Longitud" ; rr:termType  rr:Decimal ]
+	].
 
 
 <#TriplesMap6> a rr:TriplesMap; 
@@ -135,12 +177,13 @@
 		rr:class  epower:Company 
 	];   
 
-   rr:predicateObjectMap[
-	  	rr:predicateMap [ rr:constant  ids:contractDate ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Puesta en servicio"; rr:termType  rr:Literal ]
-   ];
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  ids:contractDate ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Puesta en servicio"; rr:termType  rr:Literal ]
+	];
 
-   rr:predicateObjectMap[
-      	rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
-      	rr:objectMap [ rml:reference "Empresa instaladora" ; rr:termType  rr:Literal ]
-   ].
+	rr:predicateObjectMap[
+		rr:predicateMap [ rr:constant  vcard:hasName ; rr:termType  rr:IRI ];
+		rr:objectMap [ rml:reference "Empresa instaladora" ; rr:termType  rr:Literal ]
+	].
+	

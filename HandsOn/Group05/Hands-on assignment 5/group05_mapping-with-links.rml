@@ -79,7 +79,7 @@
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ]
+		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
 		rr:objectMap [ rr:template "Ciudad URI from wikidata"; rr:termType rr:IRI ]
 	].
 
@@ -114,7 +114,7 @@
 	];
 
 	rr:predicateObjectMap [
-		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ]
+		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ];
 		rr:objectMap [ rr:template "Distrito URI from dbpedia"; rr:termType rr:IRI ]
 	].
 

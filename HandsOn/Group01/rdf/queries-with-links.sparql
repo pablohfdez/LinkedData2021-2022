@@ -38,8 +38,7 @@ SELECT ?district
             }
 
 
-# Nos compara la cantidad de distritos totales con la cantidad de distritos linked, 
-y veremos que es el mismo.
+# Nos compara la cantidad de distritos totales con la cantidad de distritos linked, y veremos que es el mismo.
 
 SELECT * WHERE{
     {

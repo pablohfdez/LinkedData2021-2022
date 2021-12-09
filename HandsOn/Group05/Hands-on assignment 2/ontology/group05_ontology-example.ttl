@@ -22,5 +22,5 @@ epower:ExampleDistrict a dbp:District;
                  vcard:hasName "Latina"^^xsd:string;
                  arp:hasCA "2178"^^xsd:int;
                  frappe:isIn epower:ExampleCity.
-epower:ExampleCity a dbp:City 
+epower:ExampleCity a epower:City 
                  vcard:hasName "Madrid"^^xsd:string.

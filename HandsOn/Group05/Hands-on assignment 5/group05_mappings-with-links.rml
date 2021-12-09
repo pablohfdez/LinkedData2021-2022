@@ -12,6 +12,7 @@
 @prefix arp: <http://www.arpenteur.org/ontology/Arpenteur.owl#>.
 @prefix frappe: <http://streamreasoning.org/ontologies/frappe#>.
 @prefix epower: <http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 @base <http://example.com/ns#>.
 
 <#TriplesMap1> a rr:TriplesMap;
@@ -75,8 +76,12 @@
 	rr:predicateObjectMap [
 		rr:predicateMap [ rr:constant  vcard:hasName; rr:termType  rr:IRI ];
 		rr:objectMap [ rml:reference "Ciudad" ; rr:termType  rr:Literal ]
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ]
+		rr:objectMap [ rr:template "Ciudad URI from wikidata"; rr:termType rr:IRI ]
 	].
-
 
 <#TriplesMap3> a rr:TriplesMap;
 	rml:logicalSource [
@@ -106,6 +111,11 @@
 			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/City/{Ciudad}"; 
 			rr:termType rr:IRI 
 		]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant owl:sameAs; rr:termType rr:IRI ]
+		rr:objectMap [ rr:template "Distrito URI from dbpedia"; rr:termType rr:IRI ]
 	].
 
 

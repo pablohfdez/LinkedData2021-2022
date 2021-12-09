@@ -21,7 +21,7 @@
 	];   
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Centro}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Building/{Centro}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:Building 
 	];   
@@ -39,7 +39,7 @@
 	rr:predicateObjectMap [ 
 		rr:predicateMap [ rr:constant frappe:isIn; rr:termType rr:IRI ]; 
 		rr:objectMap [ 
-			rr:template  "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Calle}"; 
+			rr:template  "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Street/{Calle}"; 
 			rr:termType rr:IRI 
 		]
 	];
@@ -47,7 +47,7 @@
 	rr:predicateObjectMap [ 
 		rr:predicateMap [ rr:constant epower:hasCoordinates; rr:termType rr:IRI ]; 
 		rr:objectMap [ 
-			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Número}"; 
+			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Location/{Número}"; 
 			rr:termType rr:IRI 
 		]
 	];
@@ -55,7 +55,7 @@
 	rr:predicateObjectMap [ 
 		rr:predicateMap [ rr:constant sor:hires; rr:termType rr:IRI ]; 
 		rr:objectMap [ 
-			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Empresa instaladora}"; 
+			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Company/{Empresa instaladora}"; 
 			rr:termType rr:IRI 
 		]
 	].
@@ -67,7 +67,7 @@
 	];   
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Ciudad}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/City/{Ciudad}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:City 
 	];     
@@ -85,7 +85,7 @@
 	];   
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Distrito}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/District/{Distrito}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:District 
 	];   
@@ -103,7 +103,7 @@
 	rr:predicateObjectMap [ 
 		rr:predicateMap [ rr:constant frappe:isIn; rr:termType rr:IRI ]; 
 		rr:objectMap [ 
-			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Ciudad}"; 
+			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/City/{Ciudad}"; 
 			rr:termType rr:IRI 
 		]
 	].
@@ -116,7 +116,7 @@
 	]; 
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Calle}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Street/{Calle}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:Street 
 	];   
@@ -134,7 +134,7 @@
 	rr:predicateObjectMap [ 
 		rr:predicateMap [ rr:constant frappe:isIn; rr:termType rr:IRI ]; 
 		rr:objectMap [ 
-			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Distrito}" ; 
+			rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/District/{Distrito}" ; 
 			rr:termType rr:IRI 
 		]
 	].
@@ -147,9 +147,9 @@
 	];   
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Número}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Location/{Número}" ;
 		rr:termType  rr:IRI ; 
-		rr:class  epower:Geo 
+		rr:class  epower:Location 
 	];   
 
 	rr:predicateObjectMap[
@@ -170,7 +170,7 @@
 	];
 
 	rr:subjectMap [
-		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/{Empresa instaladora}" ;
+		rr:template "http://www.semanticweb.org/alumno/ontologies/2021/10/Group05_ontology/Company/{Empresa instaladora}" ;
 		rr:termType  rr:IRI ; 
 		rr:class  epower:Company 
 	];   

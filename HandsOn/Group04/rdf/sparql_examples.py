@@ -3,24 +3,11 @@ from rdflib.plugins.sparql import prepareQuery
 
 
 def main():
-
     g = Graph()
     AQP = Namespace("http://www.airqualitypredictor.org/ontology#")
-    RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
-    with open("output.nt", "r", encoding="ISO-8859-1") as f:
-        for line in f:
-            line = line.strip()
-            line = line.replace(".", "")
-            line = line.replace("<", "")
-            line = line.replace(">", "")
-            line = line.split()
-            s, p, o = line[0], line[1], line[2]
-            if o.startswith("http"):
-                o = URIRef(o)
-            else:
-                o = Literal(o)
-            g.add((URIRef(s), URIRef(p), o))
+    g.parse('../ontology/ontology.owl', format='ttl')
+    g.parse('output-with-links.ttl', format='ttl')
 
     # Query 1
     query = """

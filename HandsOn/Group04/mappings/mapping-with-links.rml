@@ -9,43 +9,43 @@
 
 <our:TriplesMapMeasurement> a rr:TriplesMap;
 	rml:logicalSource[
-		rml:source "air_quality-updated.csv";
-		rml:referenceFormulation ql:CSV  ];
+		rml:source "air_quality-updated_short.csv";
+		rml:referenceFormulation ql:CSV];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{Measurement}";
 		rr:class owl:Class
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:atDate; 
-		rr:objectMap [rml:reference "date"]
+		rr:objectMap [rml:reference "date"; rr:datatype xsd:dateTime]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:atDay; 
-		rr:objectMap [rml:reference "day"]
+		rr:objectMap [rml:reference "day"; rr:datatype xsd:int]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:atMonth;
-		rr:objectMap [rml:reference "month"]
+		rr:objectMap [rml:reference "month"; rr:datatype xsd:int]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:atYear;
-		rr:objectMap [rml:reference "year"]
+		rr:objectMap [rml:reference "year"; rr:datatype xsd:nonNegativeInteger]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:hasUnit; 
-		rr:objectMap [rml:reference "magnitude"]
+		rr:objectMap [rml:reference "magnitude"; rr:datatype xsd:string]
 		];
 	rr:predicateObjectMap [ 
 		rr:predicate our:hasMaxValue;
-		rr:objectMap [ rml:reference "maxValue"]
+		rr:objectMap [ rml:reference "maxValue"; rr:datatype xsd:float]
 		];
 	rr:predicateObjectMap [ 
 		rr:predicate our:hasMinValue;
-		rr:objectMap [ rml:reference "minValue"]
+		rr:objectMap [ rml:reference "minValue"; rr:datatype xsd:float]
 		];
 	rr:predicateObjectMap [ 
 		rr:predicate our:hasMeanValue;
-		rr:objectMap [ rml:reference "meanValue"]
+		rr:objectMap [ rml:reference "meanValue"; rr:datatype xsd:float]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:isFrom; 
@@ -54,7 +54,7 @@
 
 <our:TriplesMapMeasurementSubClass1> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "air_quality-updated.csv";
+		rml:source "air_quality-updated_short.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{ControlStation}-{magnitude}-{year}-{month}-{day}";
@@ -70,7 +70,7 @@
 
 <our:TriplesMapMeasurementSubClass2> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "meteorological_data-updated.csv";
+		rml:source "meteorological_data-updated_short.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{ControlStation}-{magnitude}-{year}-{month}-{day}";
@@ -88,7 +88,7 @@
 
 <our:TriplesMapControlStation> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "control-stations-info-updated-and-merged-with-links.csv";
+		rml:source "control-stations-info-updated-and-merged-with-links-and-ID.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/ControlStation";
@@ -96,11 +96,11 @@
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label; 
-		rr:objectMap [rml:reference "LABEL"]
+		rr:objectMap [rml:reference "LABEL"; rr:datatype xsd:string]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:hasAdress; 
-		rr:objectMap [rml:reference "DIRECCION"]
+		rr:objectMap [rml:reference "DIRECCION"; rr:datatype xsd:string]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:isIn;
@@ -114,7 +114,7 @@
 
 <our:TriplesMapControlStationSubClass1> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "control-stations-info-updated-and-merged-with-links.csv";
+		rml:source "control-stations-info-updated-and-merged-with-links-and-ID.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{CODIGO_CORTO}-{NOM_TIPO}";
@@ -131,7 +131,7 @@
 
 <our:TriplesMapCity> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "control-stations-info-updated-and-merged-with-links.csv";
+		rml:source "control-stations-info-updated-and-merged-with-links-and-ID.csv";
 		rml:referenceFormulation ql:CSV  ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{LABEL}";

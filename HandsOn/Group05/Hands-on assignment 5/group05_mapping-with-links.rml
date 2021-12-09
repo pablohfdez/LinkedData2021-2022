@@ -17,7 +17,7 @@
 
 <#TriplesMap1> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	];   
 
@@ -63,7 +63,7 @@
 
 <#TriplesMap2> a rr:TriplesMap;  
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	];   
 
@@ -85,7 +85,7 @@
 
 <#TriplesMap3> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	];   
 
@@ -121,7 +121,7 @@
 
 <#TriplesMap4> a rr:TriplesMap; 
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	]; 
 
@@ -152,7 +152,7 @@
 
 <#TriplesMap5> a rr:TriplesMap;
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	];   
 
@@ -175,7 +175,7 @@
 
 <#TriplesMap6> a rr:TriplesMap; 
 	rml:logicalSource [
-		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated.csv" ;
+		rml:source "inventario-instalaciones-fotovoltaicas-2020-updated-with-links.csv" ;
 		rml:referenceFormulation ql:CSV 
 	];
 

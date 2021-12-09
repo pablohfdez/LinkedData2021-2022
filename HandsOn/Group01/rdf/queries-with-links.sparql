@@ -43,14 +43,14 @@ SELECT ?district
 SELECT * WHERE{
     {
     SELECT (count(distinct ?district_total) as ?count )
-    WHERE { 
+    	WHERE { 
                 
-    			?district_total rdf:type saref4city:District.
+    		?district_total rdf:type saref4city:District.
             }
     }
 	UNION
     {
-        SELECT (count(distinct ?district) as ?count )
+    SELECT (count(distinct ?district) as ?count )
         WHERE { 
                 ?district rdf:type saref4city:District.
     			?district owl:sameAs ?a.

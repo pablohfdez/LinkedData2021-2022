@@ -28,6 +28,4 @@
 - [X] Uses the correct datatype (e.g., values of 0-1 may be booleans and not integers, not every string made of numbers is a number)
 
 ## Comments on the self-assessment
-We have used a subset to our data (the first 100 rows) because using all the data will have created a 200MB file. 
-We need to fix sparql_examples.py, we don't know why it is raising an error.
-
+We have used a subset to our data (the first 100 rows) because using all the data will have created a 200MB file.

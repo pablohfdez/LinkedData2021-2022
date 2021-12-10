@@ -9,12 +9,13 @@ def main():
     g.parse('../ontology/ontology.owl', format='ttl')
     g.parse('output-with-links.ttl', format='ttl')
 
+    # for s, p, o in g.triples((None, None, None)):
+    #     print(s, p, o)
     # Query 1
     query = """
-            SELECT ?ctrlstation ?address
+            SELECT ?ctrlstation ?type
             WHERE{
-                ?ctrlstation a aqp:ControlStation .
-                ?ctrlstation aqp:hasAddress ?address .
+                ?ctrlstation a ?type .
             }
             """
     q = prepareQuery(query, initNs={"aqp": AQP})
@@ -29,8 +30,8 @@ def main():
             WHERE{
                 ?temp a aqp:Temperature .
                 ?year a aqp:atYear .
-                ?fecha a aqp:atDate . 
-                FILTER(?year == "2020") . 
+                ?fecha a aqp:atDate .
+                FILTER(?year = 2020)
             }
             """
     q = prepareQuery(query, initNs={"aqp": AQP})
@@ -44,10 +45,10 @@ def main():
             SELECT ?maxtemp ?fecha
             WHERE{
                 ?sub a aqp:Suburban .
-                ?temp a aqp:temperature . 
-                ?fecha a aqp:atDate . 
+                ?temp a aqp:temperature .
+                ?fecha a aqp:atDate .
                 ?temp aqp:hasMaxValue ?maxtemp
-                FILTER(?maxtemp > 15) 
+                FILTER(?maxtemp > 15)
             }
             """
     q = prepareQuery(query, initNs={"aqp": AQP})

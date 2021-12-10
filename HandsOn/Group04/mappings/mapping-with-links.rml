@@ -13,7 +13,10 @@
 		rml:referenceFormulation ql:CSV];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{Measurement}";
-		rr:class owl:Class
+		];
+	rr:predicateObjectMap [
+		rr:predicate rdf:type; 
+		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/{magnitude}"; rr:termType rr:IRI]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:atDate; 
@@ -57,7 +60,11 @@
 		rml:source "air_quality-updated_short.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
-		rr:template "http://www.airqualitypredictor.org/ontology/{ControlStation}-{magnitude}-{year}-{month}-{day}";
+		rr:template "http://www.airqualitypredictor.org/ontology/{Measurement}";
+		];
+	rr:predicateObjectMap [
+		rr:predicate rdf:type; 
+		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/{magnitude}"; rr:termType rr:IRI]
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdfs:type;
@@ -74,11 +81,10 @@
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{ControlStation}-{magnitude}-{year}-{month}-{day}";
-		rr:termType rr:IRI; rr:class rdfs:subClassOf
 		];
 	rr:predicateObjectMap [
-		rr:predicate rdfs:type;
-		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/{magnitude}"]
+		rr:predicate rdf:type;
+		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/{magnitude}"; rr:termType rr:IRI]
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdfs:subClassOf; 
@@ -120,7 +126,7 @@
 		rr:template "http://www.airqualitypredictor.org/ontology/{CODIGO_CORTO}-{NOM_TIPO}";
 		];
 	rr:predicateObjectMap [
-		rr:predicate rdfs:type;
+		rr:predicate rdf:type;
 		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/{NOM_TIPO}"]
 		];
 	rr:predicateObjectMap [
@@ -135,7 +141,10 @@
 		rml:referenceFormulation ql:CSV  ];
 	rr:subjectMap [
 		rr:template "http://www.airqualitypredictor.org/ontology/{LABEL}";
-		rr:termType rr:IRI; rr:class owl:Class
+		];
+	rr:predicateObjectMap [
+		rr:predicate rdf:type; 
+		rr:objectMap [rr:template "http://www.airqualitypredictor.org/ontology/ControlStation"; rr:termType rr:IRI]
 		];
 	rr:predicateObjectMap [
 		rr:predicate our:hasControlStation;

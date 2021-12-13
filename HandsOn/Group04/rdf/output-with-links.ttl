@@ -988,179 +988,178 @@
 <http://www.airqualitypredictor.org/ontology/28079055_44_2_19_01_01> <http://www.w3.org/2000/01/rdf-schema#type> <http://www.airqualitypredictor.org/ontology/NMHC>.
 <http://www.airqualitypredictor.org/ontology/28079057_1_38_19_01_01> <http://www.w3.org/2000/01/rdf-schema#type> <http://www.airqualitypredictor.org/ontology/SO_2>.
 <http://www.airqualitypredictor.org/ontology/28079011_20_59_19_01_01> <http://www.w3.org/2000/01/rdf-schema#type> <http://www.airqualitypredictor.org/ontology/TOL>.
-<http://www.airqualitypredictor.org/ontology/102-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/58-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/103-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/56-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/104-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/56-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/104-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/54-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/106-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/54-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/106-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/39-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/107-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/38-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/107-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/36-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/108-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/35-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/24-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/108-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/24-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/109-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/18-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/110-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/8-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/111-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/4-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/112-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/115-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/113-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/103-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/59-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/114-Temperature-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/59-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/102-Precipitation-2019-1-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/115-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/106-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/103-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/103-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/109-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/54-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/104-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/18-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/110-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/56-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/112-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/104-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/8-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/59-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/56-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/58-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/4-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/111-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/59-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/108-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/38-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/39-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/107-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/35-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/107-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/114-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/106-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/108-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/102-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/102-Precipitation-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/54-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/113-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/36-Temperature-2019-1-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/56-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/104-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/107-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/111-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/103-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/107-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/8-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/59-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/36-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/54-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/56-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/24-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/39-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/38-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/35-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/18-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/104-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/54-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/109-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/106-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/106-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/108-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/108-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/110-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/24-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/102-Precipitation-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
-<http://www.airqualitypredictor.org/ontology/59-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/102-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/103-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/58-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/113-Temperature-2019-1-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#subClassOf>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "plaza de España"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza de Espana"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Escuelas Aguirre"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Entre C/ Alcala y C/ O’ Donell "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "calle de Arturo Soria"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Arturo Soria  esq. C/  Vizconde de los Asilos "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Farolillo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Calle Farolillo - C/Ervigio"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Casa de Campo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Casa de Campo  (Terminal del Teleferico)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza del Carmen"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza del Carmen esq. Tres Cruces. "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Moratalaz"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Moratalaz  esq. Camino de los Vinateros"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Cuatro Caminos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda. Pablo Iglesias esq. C/ Marques de Lema"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "El Pilar"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Betanzos esq. C/  Monforte de Lemos "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Vallecas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Arroyo del Olivar  esq. C/  Rio Grande. "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Méndez Álvaro"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Juan de Mariana / Pza. Amanecer Mendez Alvaro"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Paseo de la Castellana"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Jose Gutierrez Abascal"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Retiro"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Paseo Venezuela- Casa de Vacas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "plaza de Castilla"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza Castilla (Canal)"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Ensanche de Vallecas"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda La Gavia / Avda. Las Suertes"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Urbanizacion Embajada"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Riano (Barajas) "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza Elíptica"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> " Pza. Eliptica - Avda. Oporto"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Sanchinarro"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Princesa de Eboli esq C/ Maria Tudor"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "El Pardo"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda. La Guardia"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Tres Olivos"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza Tres Olivos "^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Pablo Iglesias esq. C/ Marques de Lema"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Pza. Eliptica - Avda. Oporto"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "EDAR La China"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Embajadores"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Centro Municipal de Acustica"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "Autovia M-30 Km. 21.700"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Peñagrande"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/ControlStation> <http://www.airqualitypredictor.org/ontology#hasAdress> "C.D.M. Penagrande"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.airqualitypredictor.org/ontology/4-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/8-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/16-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/18-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/24-Suburban> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Suburban>.
-<http://www.airqualitypredictor.org/ontology/35-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/36-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/38-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/39-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/40-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/47-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/48-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/49-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/50-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/54-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/55-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/56-UrbanTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
-<http://www.airqualitypredictor.org/ontology/57-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/58-Suburban> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Suburban>.
-<http://www.airqualitypredictor.org/ontology/60-UrbanBackground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
-<http://www.airqualitypredictor.org/ontology/38-Meteorological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
-<http://www.airqualitypredictor.org/ontology/56-Meteorological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
-<http://www.airqualitypredictor.org/ontology/104-Meteorological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
-<http://www.airqualitypredictor.org/ontology/106-Meteorological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
-<http://www.airqualitypredictor.org/ontology/108-Meteorological> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
+<http://www.airqualitypredictor.org/ontology/28079102_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079058_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079103_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079056_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079104_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079056_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079104_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079054_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079106_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079054_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079106_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079039_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079107_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079038_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079107_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079036_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079108_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079035_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079024_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079108_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079024_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079109_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079018_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079110_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079008_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079111_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079004_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079112_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079115_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079113_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079103_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079059_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079114_83_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079059_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079102_89_98_19_01_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079115_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079106_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079103_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079103_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079109_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079054_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079104_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079018_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079110_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079056_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079112_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079104_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079008_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079059_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079056_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079058_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079004_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079111_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079059_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079108_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079038_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079039_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079107_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079035_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079107_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079114_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079106_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079108_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079102_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079102_89_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079054_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079113_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079036_83_98_19_01_02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079056_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079104_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079107_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079111_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079103_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079107_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079008_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079059_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079036_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079054_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079056_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079024_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079039_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079038_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079035_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079018_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079104_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079054_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079109_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079106_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079106_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079108_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079108_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079110_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079024_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079102_89_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Precipitation>.
+<http://www.airqualitypredictor.org/ontology/28079059_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079102_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079103_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079058_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/28079113_83_98_19_01_03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Temperature>.
+<http://www.airqualitypredictor.org/ontology/4> <http://www.w3.org/2000/01/rdf-schema#label> "plaza de España"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/4> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza de Espana"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/8> <http://www.w3.org/2000/01/rdf-schema#label> "Escuelas Aguirre"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/8> <http://www.airqualitypredictor.org/ontology#hasAdress> "Entre C/ Alcala y C/ O’ Donell "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/16> <http://www.w3.org/2000/01/rdf-schema#label> "calle de Arturo Soria"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/16> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Arturo Soria  esq. C/  Vizconde de los Asilos "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/18> <http://www.w3.org/2000/01/rdf-schema#label> "Farolillo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/18> <http://www.airqualitypredictor.org/ontology#hasAdress> "Calle Farolillo - C/Ervigio"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/24> <http://www.w3.org/2000/01/rdf-schema#label> "Casa de Campo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/24> <http://www.airqualitypredictor.org/ontology#hasAdress> "Casa de Campo  (Terminal del Teleferico)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/35> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza del Carmen"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/35> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza del Carmen esq. Tres Cruces. "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/36> <http://www.w3.org/2000/01/rdf-schema#label> "Moratalaz"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/36> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Moratalaz  esq. Camino de los Vinateros"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/38> <http://www.w3.org/2000/01/rdf-schema#label> "Cuatro Caminos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/38> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda. Pablo Iglesias esq. C/ Marques de Lema"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/39> <http://www.w3.org/2000/01/rdf-schema#label> "El Pilar"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/39> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Betanzos esq. C/  Monforte de Lemos "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/40> <http://www.w3.org/2000/01/rdf-schema#label> "Vallecas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/40> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Arroyo del Olivar  esq. C/  Rio Grande. "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/47> <http://www.w3.org/2000/01/rdf-schema#label> "Méndez Álvaro"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/47> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Juan de Mariana / Pza. Amanecer Mendez Alvaro"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/48> <http://www.w3.org/2000/01/rdf-schema#label> "Paseo de la Castellana"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/48> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Jose Gutierrez Abascal"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/49> <http://www.w3.org/2000/01/rdf-schema#label> "Retiro"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/49> <http://www.airqualitypredictor.org/ontology#hasAdress> "Paseo Venezuela- Casa de Vacas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/50> <http://www.w3.org/2000/01/rdf-schema#label> "plaza de Castilla"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/50> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza Castilla (Canal)"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/54> <http://www.w3.org/2000/01/rdf-schema#label> "Ensanche de Vallecas"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/54> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda La Gavia / Avda. Las Suertes"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/55> <http://www.w3.org/2000/01/rdf-schema#label> "Urbanizacion Embajada"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/55> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Riano (Barajas) "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/56> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza Elíptica"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/56> <http://www.airqualitypredictor.org/ontology#hasAdress> " Pza. Eliptica - Avda. Oporto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/57> <http://www.w3.org/2000/01/rdf-schema#label> "Sanchinarro"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/57> <http://www.airqualitypredictor.org/ontology#hasAdress> "C/ Princesa de Eboli esq C/ Maria Tudor"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/58> <http://www.w3.org/2000/01/rdf-schema#label> "El Pardo"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/58> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avda. La Guardia"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/60> <http://www.w3.org/2000/01/rdf-schema#label> "Tres Olivos"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/60> <http://www.airqualitypredictor.org/ontology#hasAdress> "Plaza Tres Olivos "^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/38> <http://www.airqualitypredictor.org/ontology#hasAdress> "Avd. Pablo Iglesias esq. C/ Marques de Lema"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/56> <http://www.airqualitypredictor.org/ontology#hasAdress> "Pza. Eliptica - Avda. Oporto"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/104> <http://www.w3.org/2000/01/rdf-schema#label> "EDAR La China"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/104> <http://www.airqualitypredictor.org/ontology#hasAdress> "Embajadores"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/106> <http://www.w3.org/2000/01/rdf-schema#label> "Centro Municipal de Acustica"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/106> <http://www.airqualitypredictor.org/ontology#hasAdress> "Autovia M-30 Km. 21.700"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/108> <http://www.w3.org/2000/01/rdf-schema#label> "Peñagrande"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/108> <http://www.airqualitypredictor.org/ontology#hasAdress> "C.D.M. Penagrande"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://www.airqualitypredictor.org/ontology/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Suburban>.
+<http://www.airqualitypredictor.org/ontology/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanTraffic>.
+<http://www.airqualitypredictor.org/ontology/57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Suburban>.
+<http://www.airqualitypredictor.org/ontology/60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/UrbanBackground>.
+<http://www.airqualitypredictor.org/ontology/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
+<http://www.airqualitypredictor.org/ontology/56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
+<http://www.airqualitypredictor.org/ontology/104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
+<http://www.airqualitypredictor.org/ontology/106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
+<http://www.airqualitypredictor.org/ontology/108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/Meteorological>.
 <http://www.airqualitypredictor.org/ontology/plaza%20de%20Espa%C3%B1a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/ControlStation>.
 <http://www.airqualitypredictor.org/ontology/plaza%20de%20Espa%C3%B1a> <http://www.w3.org/2002/07/owl#sameAs> <https://www.wikidata.org/wiki/Q1326261>.
 <http://www.airqualitypredictor.org/ontology/Escuelas%20Aguirre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.airqualitypredictor.org/ontology/ControlStation>.

@@ -80,7 +80,7 @@
 		rml:source "meteorological_data-updated_short.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
-		rr:template "http://www.airqualitypredictor.org/ontology/{ControlStation}-{magnitude}-{year}-{month}-{day}";
+		rr:template "http://www.airqualitypredictor.org/ontology/{Measurement}";
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdf:type;
@@ -97,8 +97,7 @@
 		rml:source "control-stations-info-updated-and-merged-with-links-and-ID.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
-		rr:template "http://www.airqualitypredictor.org/ontology/ControlStation";
-		rr:termType rr:IRI; rr:class rdfs:subClassOf
+		rr:template "http://www.airqualitypredictor.org/ontology/{CODIGO_CORTO}";
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label; 
@@ -123,7 +122,7 @@
 		rml:source "control-stations-info-updated-and-merged-with-links-and-ID.csv";
 		rml:referenceFormulation ql:CSV ];
 	rr:subjectMap [
-		rr:template "http://www.airqualitypredictor.org/ontology/{CODIGO_CORTO}-{NOM_TIPO}";
+		rr:template "http://www.airqualitypredictor.org/ontology/{CODIGO_CORTO}";
 		];
 	rr:predicateObjectMap [
 		rr:predicate rdf:type;
